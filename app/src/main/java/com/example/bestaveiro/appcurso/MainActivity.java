@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_inventario) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
-                            , new iventario())
+                            , new Inventario())
                     .commit();
 
         } else if (id == R.id.nav_horario) {

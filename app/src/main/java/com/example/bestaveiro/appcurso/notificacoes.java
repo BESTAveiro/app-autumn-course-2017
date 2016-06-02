@@ -20,4 +20,6 @@ public class notificacoes extends Fragment{
         myView = inflater.inflate(R.layout.notificacoes, container, false);
         return myView;
     }
+
+
 }
