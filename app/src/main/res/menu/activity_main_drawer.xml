@@ -11,13 +11,13 @@
             android:icon="@drawable/ic_list_black"
             android:title="Horário" />
         <item
-            android:id="@+id/nav_inventario"
+            android:id="@+id/nav_inventario_swipe"
             android:icon="@drawable/ic_content_paste_black"
             android:title="Inventário" />
         <item
             android:id="@+id/nav_pontuaçao"
             android:icon="@drawable/ic_play_arrow_black"
-            android:title="Pontuação" />
+            android:title="Pontuação"/>
         <item
             android:id="@+id/nav_fotos"
             android:icon="@drawable/ic_menu_camera"
@@ -26,6 +26,10 @@
             android:id="@+id/nav_notificacoes"
             android:icon="@drawable/ic_notifications_black_24px"
             android:title="Notificações" />
+        <item
+            android:id="@+id/nav_drinking_get2know"
+            android:icon="@drawable/book"
+            android:title="Drinking e G2K" />
     </group>
 
 </menu>

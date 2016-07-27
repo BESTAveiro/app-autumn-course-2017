@@ -1,25 +1,46 @@
 package com.example.bestaveiro.appcurso;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.example.bestaveiro.appcurso.Drinking_G2K.Drinking_G2K;
+import com.example.bestaveiro.appcurso.Inventario.Inventario_versao_tap_swipe;
+import com.example.bestaveiro.appcurso.Schedule.Schedule;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener
+{
+    FragmentManager fragManager;
+    public static FragmentStack fragStack;
+    NavigationView navigationView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        fragStack = new FragmentStack();
+
+        fragManager = getSupportFragmentManager();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Muda Isto");
+
+        TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
+        tabs.setVisibility(View.GONE);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -28,8 +49,16 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // para começar automaticamente no primeiro fragment
+        fragManager.beginTransaction()
+                .replace(R.id.content_frame
+                        , new Schedule())
+                .commit();
+        fragStack.push(0);
+        navigationView.getMenu().getItem(0).setChecked(true);
     }
 
     @Override
@@ -38,7 +67,14 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            if (fragManager.getBackStackEntryCount() > 0)
+            {
+                fragManager.popBackStack();
+                int i = fragStack.pop();
+                Log.d("onBackPressed", String.format("%d retirado do stack", i));
+                navigationView.getMenu().getItem(i).setChecked(true);
+            }
+            else super.onBackPressed();
         }
     }
 
@@ -61,48 +97,93 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_schedule) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new schedule())
-                    .commit();
-        } else if (id == R.id.nav_pontuaçao) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new pontuacao())
-                    .commit();
 
-        } else if (id == R.id.nav_notificacoes) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new notificacoes())
-                    .commit();
+        if(item.isChecked()) return true;
+        item.setChecked(true);
 
-        } else if (id == R.id.nav_inventario) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new Inventario())
-                    .commit();
+        switch(id)
+        {
+            case R.id.nav_schedule:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new Schedule())
+                        .addToBackStack("op")
+                        .commit();
+                fragStack.push(0);
+                break;
 
-        } else if (id == R.id.nav_horario) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new horario())
-                    .commit();
+            case R.id.nav_horario:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new horario())
+                        .addToBackStack("op")
+                        .commit();
+                fragStack.push(1);
+                break;
 
-        } else if (id == R.id.nav_fotos) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new fotos())
-                    .commit();
+            case R.id.nav_inventario_swipe:
+                if(Inventario_versao_tap_swipe.fragmentAtual == null)
+                {
+                    fragManager.beginTransaction()
+                            .replace(R.id.content_frame
+                                    , Inventario_versao_tap_swipe.NewInstance(true))
+                            .addToBackStack("op")
+                            .commit();
+                }
+                else
+                {
+                    fragManager.beginTransaction()
+                            .replace(R.id.content_frame
+                                    , Inventario_versao_tap_swipe.NewInstance(false))
+                            .addToBackStack("op")
+                            .commit();
+                }
+                fragStack.push(2);
+                break;
+
+            case R.id.nav_pontuaçao:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new pontuacao())
+                        .addToBackStack("op")
+                        .commit();
+                fragStack.push(3);
+                break;
+
+            case R.id.nav_fotos:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new fotos())
+                        .addToBackStack("op")
+                        .commit();
+                fragStack.push(4);
+                break;
+
+            case R.id.nav_notificacoes:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new notificacoes())
+                        .addToBackStack("op")
+                        .commit();
+                fragStack.push(5);
+                break;
+            case R.id.nav_drinking_get2know:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new Drinking_G2K())
+                        .addToBackStack("op")
+                        .commit();
+                fragStack.push(6);
+                break;
         }
+
+        Log.d("back stack entry count", ""+fragManager.getBackStackEntryCount());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Schedule"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp" />
+        android:text="Agosto"
+        android:id="@+id/textViewCalendarAugust"
+        android:textSize="20dp"
+        style="@style/CalendarText"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
 
-    <CalendarView
+    <GridView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/calendarView"/>
-</RelativeLayout>
+        android:id="@+id/gridViewCalendarAugust"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setembro"
+        android:textSize="20dp"
+        style="@style/CalendarText"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textViewCalendarSeptember"
+        android:layout_gravity="center"/>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridViewCalendarSeptember"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"/>
+
+
+
+</LinearLayout>

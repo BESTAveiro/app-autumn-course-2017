@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "862718213573",
+    "firebase_url": "https://teste-1b9ce.firebaseio.com",
+    "project_id": "teste-1b9ce",
+    "storage_bucket": "teste-1b9ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862718213573:android:db3772772b2d2152",
+        "android_client_info": {
+          "package_name": "com.example.bestaveiro.appcurso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862718213573-e50d53u3j6u13pkg2aah956h0066hvb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgKIoZ2G6zDTyKUqioWcZ6AilR_CW2njk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
