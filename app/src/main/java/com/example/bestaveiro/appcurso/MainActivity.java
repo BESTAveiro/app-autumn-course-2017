@@ -1,5 +1,6 @@
 package com.example.bestaveiro.appcurso;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -16,7 +17,12 @@ import android.view.View;
 
 import com.example.bestaveiro.appcurso.Drinking_G2K.Drinking_G2K;
 import com.example.bestaveiro.appcurso.Inventario.Inventario_versao_tap_swipe;
+import com.example.bestaveiro.appcurso.Notificacoes.NotificacoesDB;
+import com.example.bestaveiro.appcurso.Notificacoes.NotificationListener;
+import com.example.bestaveiro.appcurso.Notificacoes.notificacoes;
 import com.example.bestaveiro.appcurso.Schedule.Schedule;
+
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
@@ -30,6 +36,23 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NotificacoesDB.retrieveAll();
+
+        StaticMethods.removeFAB(this);
+
+        // teste para ver se os extras da notificação eram entregues
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null)
+        {
+            Set<String> set = bundle.keySet();
+
+            for(String a : set)
+            {
+                Log.d("Message", String.format("%s - %s", a, bundle.getString(a)));
+            }
+        }
+
 
         fragStack = new FragmentStack();
 
@@ -51,6 +74,7 @@ public class MainActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
 
         // para começar automaticamente no primeiro fragment
         fragManager.beginTransaction()
@@ -92,6 +116,15 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        switch (id)
+        {
+            case R.id.checkNotiAccess:
+                Log.d("Menu", String.format("has access = %b", NotificationListener.hasAccess));
+                Intent intent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
+                startActivity(intent);
+                break;
+        }
+
 
 
         return super.onOptionsItemSelected(item);
@@ -128,22 +161,11 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_inventario_swipe:
-                if(Inventario_versao_tap_swipe.fragmentAtual == null)
-                {
-                    fragManager.beginTransaction()
-                            .replace(R.id.content_frame
-                                    , Inventario_versao_tap_swipe.NewInstance(true))
-                            .addToBackStack("op")
-                            .commit();
-                }
-                else
-                {
-                    fragManager.beginTransaction()
-                            .replace(R.id.content_frame
-                                    , Inventario_versao_tap_swipe.NewInstance(false))
-                            .addToBackStack("op")
-                            .commit();
-                }
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , Inventario_versao_tap_swipe.NewInstance())
+                        .addToBackStack("op")
+                        .commit();
                 fragStack.push(2);
                 break;
 

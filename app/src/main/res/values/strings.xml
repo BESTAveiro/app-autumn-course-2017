@@ -8,8 +8,20 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
+
     <string-array name="alcool_com_imagem">
         <item>sagres</item>
     </string-array>
+
+    <string-array name="comida_com_imagem">
+        <item>chocapic2</item>
+    </string-array>
+
+    <string-array name="outros_com_imagem">
+        <item>chocapic2</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -52,7 +52,7 @@ public class ShowPopUp extends Fragment
             public void onClick(View v) {
                 if (click) {
                     //popUp.showAtLocation(mainLayout, Gravity.CENTER, 0, 0);
-                    //popUp.update(0, 0, 300, 300);
+                    //popUp.retrieve(0, 0, 300, 300);
                     popUp.showAsDropDown(but);
                     Log.d("ShowPopUp", String.format("is popup showing? %b", popUp.isShowing()));
                     click = false;

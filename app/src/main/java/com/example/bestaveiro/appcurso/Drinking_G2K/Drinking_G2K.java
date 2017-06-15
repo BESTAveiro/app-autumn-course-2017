@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.bestaveiro.appcurso.R;
+import com.example.bestaveiro.appcurso.StaticMethods;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +40,9 @@ public class Drinking_G2K extends Fragment
         Log.d(className, "onCreateView");
         View myView;
         myView = inflater.inflate(R.layout.fragment_drinking__g2_k, container, false);
+
+        StaticMethods.removeTabLayout(getActivity());
+        StaticMethods.removeFAB(getActivity());
 
         viewPager = (ViewPager) myView.findViewById(R.id.viewpager_drinking_g2k);
         setupViewPager(viewPager);
@@ -102,7 +106,7 @@ public class Drinking_G2K extends Fragment
         @Override
         public int getCount()
         {
-            //Log.d(className, String.format("fragment adapter count %d", mFragmentList.size()));
+            //Log.d(className, String.format("fragment Adapter count %d", mFragmentList.size()));
             return mFragmentList.size();
         }
 

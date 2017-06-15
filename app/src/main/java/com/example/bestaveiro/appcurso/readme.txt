@@ -1,15 +1,4 @@
-﻿fazer duas versões para o inventário, uma usando expandablelistview e outra usando swipe com tabs
-RESOLVIDO
-
-na versão de swipe com tabs o tablayout aparece em baixo, resolver isso com includes de layout
-RESOLVIDO
-
-criar bases de dados para o inventário
-CRIADA BASE DE DADOS LOCAL
-meter list views nos fragments do inventário
-RESOLVIDO
-
-usar swipe to refresh com um snackbar a mostrar o resultado da operação
+﻿usar swipe to refresh com um snackbar a mostrar o resultado da operação
 usar tb imagem de refresh no menu
 
 retirei o toolbar do app bar main e vou pôr nos fragments individualmente
@@ -31,10 +20,18 @@ RESOLVIDO
 criar funções para atualizar as bases de dados em resposta a clickes nos itens do inventário
 se não for possível atualizar a base de dados remota (se não houver net) mostrar snackbar
 
-funcionalidade de pesquisa no inventário
-
-adicionar novos itens ao inventário
-
-meter um snackbar em vez de toast para avisar das coisas
-
 falar da ideia de enviar a app para feedback para observers, só mesmo para ver se há problemas de navegação e assim
+
+pode haver problemas se alguém retirar algo da firebase e eu fizer uma alteração nessa mesma coisa na app, porque assim ia voltar a pôr isso no firebase
+para resolver isso é meter listeners do firebase para ver se alguma coisa é eliminada e aí então retirar tb da bd local
+
+vai ser possível inserir e eliminar cenas pelo telemóvel? vai sim
+
+nos onComplete estou a partir do princípio de que não vai acontecer nenhum erro
+
+o behavior do fab não está a funcionar, teria que ter o fab junto com o recyclerView
+
+fazer a cena de ordenar a arrayList
+
+meter o nome correto no toolbar
+

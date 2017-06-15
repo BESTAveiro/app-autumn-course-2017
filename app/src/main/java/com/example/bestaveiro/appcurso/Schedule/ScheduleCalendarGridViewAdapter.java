@@ -66,7 +66,7 @@ public class ScheduleCalendarGridViewAdapter extends BaseAdapter
             @Override
             public void onClick(View v)
             {
-                Log.d("adapter", String.format("%d clicked", position));
+                Log.d("Adapter", String.format("%d clicked", position));
 
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame

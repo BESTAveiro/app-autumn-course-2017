@@ -18,4 +18,6 @@ public class HandleMessages extends FirebaseMessagingService
         super.onMessageReceived(remoteMessage);
         Log.d(className, "mensagem recebida");
     }
+
+
 }

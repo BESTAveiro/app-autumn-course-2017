@@ -37,6 +37,8 @@ public class Schedule extends Fragment
 
         myView = inflater.inflate(R.layout.schedule, container, false);
 
+        StaticMethods.removeFAB(getActivity());
+
         Log.d(className,"onCreateView");
 
         String augustDays[] = {"23", "24", "25", "26", "27", "28", "29", "30", "31"};

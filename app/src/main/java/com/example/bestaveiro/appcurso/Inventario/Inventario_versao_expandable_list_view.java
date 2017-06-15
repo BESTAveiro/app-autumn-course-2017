@@ -52,7 +52,7 @@ public class Inventario_versao_expandable_list_view extends Fragment
         //expListView.setDividerHeight(0);
         // http://stackoverflow.com/questions/21706231/put-on-the-right-the-indicator-of-an-expandablelistview-in-android
         // para mudar o indicator de sítio e de imagem
-        // adapter.notifyDataSetChanged();
+        // Adapter.notifyDataSetChanged();
 
         return tmp;
     }

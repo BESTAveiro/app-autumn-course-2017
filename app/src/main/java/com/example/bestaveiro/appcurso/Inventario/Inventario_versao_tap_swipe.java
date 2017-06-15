@@ -15,7 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.bestaveiro.appcurso.Inventario.Alcool.Alcool;
+import com.example.bestaveiro.appcurso.Inventario.Comida.Comida;
+import com.example.bestaveiro.appcurso.Inventario.Outros.Outros;
 import com.example.bestaveiro.appcurso.R;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,22 +31,22 @@ public class Inventario_versao_tap_swipe extends Fragment
 {
     String className = "Inventário";
     TabLayout tabLayout;
-    ViewPager viewPager;
-    Boolean loadAgain;
+    public static ViewPager viewPager;
+    static Boolean loadAgain;
     AppBarLayout appBarLayout;
 
     public static Inventario_versao_tap_swipe fragmentAtual;
 
-    public static Inventario_versao_tap_swipe NewInstance(boolean b)
+    public static Inventario_versao_tap_swipe NewInstance()
     {
-        Bundle args = new Bundle();
-        args.putBoolean("bool", b);
         if(fragmentAtual != null)
         {
+            loadAgain = true;
             return fragmentAtual;
         }
+
         Inventario_versao_tap_swipe tmp = new Inventario_versao_tap_swipe();
-        tmp.setArguments(args);
+        if(loadAgain == null) loadAgain = false;
         return tmp;
     }
 
@@ -52,7 +56,8 @@ public class Inventario_versao_tap_swipe extends Fragment
         super.onCreate(savedInstanceState);
         fragmentAtual = this;
         getActivity().setTitle(className);
-        loadAgain = getArguments().getBoolean("bool");
+        Log.d(className, "onCreate");
+        Log.d(className, String.format("loadAgain = %b ", loadAgain));
     }
 
     @Override
@@ -87,9 +92,9 @@ public class Inventario_versao_tap_swipe extends Fragment
         tabLayout.post(new Runnable() {
             @Override
             public void run() {
-                if(loadAgain)tabLayout.setupWithViewPager(viewPager);
-                viewPager.getAdapter().notifyDataSetChanged();
-                //viewPager.setCurrentItem(0, true);
+                Log.d(className, "onStart - load again " + loadAgain);
+                tabLayout.setupWithViewPager(viewPager);
+                if(loadAgain) viewPager.getAdapter().notifyDataSetChanged();
                 Log.d("onCreateView", String.format("%d tabs", tabLayout.getTabCount()));
             }
         });
@@ -101,6 +106,7 @@ public class Inventario_versao_tap_swipe extends Fragment
         super.onDestroy();
         Log.d(className, "onDestroy");
         fragmentAtual = null;
+        loadAgain = true;
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -119,6 +125,13 @@ public class Inventario_versao_tap_swipe extends Fragment
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels)
             {
+
+            }
+
+            @Override
+            public void onPageSelected(int position)
+            {
+                // para voltar a mostrar a toolbar cada vez que se mudar a página
                 CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) appBarLayout.getLayoutParams();
                 AppBarLayout.Behavior behavior = (AppBarLayout.Behavior) params.getBehavior();
                 if(behavior!=null)
@@ -126,12 +139,10 @@ public class Inventario_versao_tap_swipe extends Fragment
                     behavior.setTopAndBottomOffset(0);
                     behavior.onNestedPreScroll(coordinatorLayout, appBarLayout, null, 0, 1, new int[2]);
                 }
-            }
 
-            @Override
-            public void onPageSelected(int position)
-            {
-
+                Log.d(className, "vai enviar evento");
+                // evento para registar o onClick do fab
+                EventBus.getDefault().post(position);
             }
 
             @Override
@@ -162,13 +173,13 @@ public class Inventario_versao_tap_swipe extends Fragment
 
         @Override
         public Fragment getItem(int position) {
-            Log.d(className, String.format("adapter fragment get item %d", position));
+            Log.d(className, String.format("Adapter fragment get item %d", position));
             return mFragmentList.get(position);
         }
 
         @Override
         public int getCount() {
-            //Log.d(className, String.format("fragment adapter count %d", mFragmentList.size()));
+            //Log.d(className, String.format("fragment Adapter count %d", mFragmentList.size()));
             return mFragmentList.size();
         }
 

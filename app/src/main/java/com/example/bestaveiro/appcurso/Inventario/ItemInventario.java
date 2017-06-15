@@ -18,6 +18,11 @@ public class ItemInventario
         if(grupo != null) this.grupo = grupo;
     }
 
+    public ItemInventario()
+    {
+
+    }
+
     @Override
     public String toString()
     {
