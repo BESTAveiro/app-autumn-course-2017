@@ -1,6 +1,5 @@
 package com.example.bestaveiro.appcurso;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -11,18 +10,11 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.example.bestaveiro.appcurso.Drinking_G2K.Drinking_G2K;
-import com.example.bestaveiro.appcurso.Inventario.Inventario_versao_tap_swipe;
-import com.example.bestaveiro.appcurso.Notificacoes.NotificacoesDB;
-import com.example.bestaveiro.appcurso.Notificacoes.NotificationListener;
-import com.example.bestaveiro.appcurso.Notificacoes.notificacoes;
 import com.example.bestaveiro.appcurso.Schedule.Schedule;
-
-import java.util.Set;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
@@ -36,22 +28,6 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        NotificacoesDB.retrieveAll();
-
-        StaticMethods.removeFAB(this);
-
-        // teste para ver se os extras da notificação eram entregues
-        Bundle bundle = getIntent().getExtras();
-        if(bundle!=null)
-        {
-            Set<String> set = bundle.keySet();
-
-            for(String a : set)
-            {
-                Log.d("Message", String.format("%s - %s", a, bundle.getString(a)));
-            }
-        }
 
 
         fragStack = new FragmentStack();
@@ -102,33 +78,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        switch (id)
-        {
-            case R.id.checkNotiAccess:
-                Log.d("Menu", String.format("has access = %b", NotificationListener.hasAccess));
-                Intent intent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
-                startActivity(intent);
-                break;
-        }
-
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
 
     @Override
@@ -160,41 +109,6 @@ public class MainActivity extends AppCompatActivity
                 fragStack.push(1);
                 break;
 
-            case R.id.nav_inventario_swipe:
-                fragManager.beginTransaction()
-                        .replace(R.id.content_frame
-                                , Inventario_versao_tap_swipe.NewInstance())
-                        .addToBackStack("op")
-                        .commit();
-                fragStack.push(2);
-                break;
-
-            case R.id.nav_pontuaçao:
-                fragManager.beginTransaction()
-                        .replace(R.id.content_frame
-                                , new pontuacao())
-                        .addToBackStack("op")
-                        .commit();
-                fragStack.push(3);
-                break;
-
-            case R.id.nav_fotos:
-                fragManager.beginTransaction()
-                        .replace(R.id.content_frame
-                                , new fotos())
-                        .addToBackStack("op")
-                        .commit();
-                fragStack.push(4);
-                break;
-
-            case R.id.nav_notificacoes:
-                fragManager.beginTransaction()
-                        .replace(R.id.content_frame
-                                , new notificacoes())
-                        .addToBackStack("op")
-                        .commit();
-                fragStack.push(5);
-                break;
             case R.id.nav_drinking_get2know:
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame

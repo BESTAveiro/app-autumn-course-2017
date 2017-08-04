@@ -22,8 +22,6 @@ public class horario extends Fragment
         StaticMethods.removeTabLayout(getActivity());
         myView = inflater.inflate(R.layout.horario, container, false);
 
-        StaticMethods.removeFAB(getActivity());
-
         return myView;
     }
 }

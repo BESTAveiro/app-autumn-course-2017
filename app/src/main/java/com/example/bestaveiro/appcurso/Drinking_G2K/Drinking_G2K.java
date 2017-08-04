@@ -42,7 +42,6 @@ public class Drinking_G2K extends Fragment
         myView = inflater.inflate(R.layout.fragment_drinking__g2_k, container, false);
 
         StaticMethods.removeTabLayout(getActivity());
-        StaticMethods.removeFAB(getActivity());
 
         viewPager = (ViewPager) myView.findViewById(R.id.viewpager_drinking_g2k);
         setupViewPager(viewPager);

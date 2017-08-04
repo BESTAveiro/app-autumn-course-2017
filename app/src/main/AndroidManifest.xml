@@ -29,34 +29,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
-
-        </activity>
-
-        <activity
-            android:name=".pop"
-            android:theme="@style/AppTheme.Custom" />
-
-
-
-        <activity android:name=".teamActivity"
-                  android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-
-                <data
-                    android:host="appcurso.bestaveiro.example.com"
-                    android:pathPrefix="/team"
-                    android:scheme="http"/>
-            </intent-filter>
-        </activity>
 
         <service
             android:name=".Notificacoes.NotificationListener"
