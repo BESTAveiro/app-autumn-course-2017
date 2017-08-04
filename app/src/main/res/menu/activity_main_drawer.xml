@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_schedule"
             android:icon="@drawable/ic_toc_black_24px"
-            android:title="Schedule" />
+            android:title="Organizers' Handbook" />
         <item
             android:id="@+id/nav_horario"
             android:icon="@drawable/ic_list_black"

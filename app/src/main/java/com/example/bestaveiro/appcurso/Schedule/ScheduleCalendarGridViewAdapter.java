@@ -70,7 +70,7 @@ public class ScheduleCalendarGridViewAdapter extends BaseAdapter
 
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame
-                                , ShowPDF.newInstance(new Date()))
+                                , ShowPDF.newInstance(position))
                         .addToBackStack(null)
                         .commit();
 

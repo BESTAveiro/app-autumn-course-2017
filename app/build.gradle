@@ -29,4 +29,5 @@ dependencies {
     compile 'com.android.support:support-v4:25.4.0'
     compile 'com.android.support:recyclerview-v7:25.4.0'
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.barteksc:android-pdf-viewer:2.6.1'
 }

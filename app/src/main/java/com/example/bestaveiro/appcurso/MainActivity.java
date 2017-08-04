@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
 
-        if(item.isChecked()) return true;
+//        if(item.isChecked()) return true;
         item.setChecked(true);
 
         switch(id)
