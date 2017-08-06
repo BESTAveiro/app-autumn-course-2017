@@ -27,7 +27,7 @@ public class Schedule extends Fragment
         super.onCreate(savedInstanceState);
         Log.d(getClass().getSimpleName(),"onCreate");
         className = getClass().getSimpleName();
-        getActivity().setTitle("Organizers' Handbook");
+        getActivity().setTitle(className);
     }
 
     @Override
@@ -39,7 +39,8 @@ public class Schedule extends Fragment
 
         Log.d(className,"onCreateView");
 
-        String septemberDays[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+
+        String septemberDays[] = {"1", "2", "3" , "4" , "5", "6", "7", "8", "9"};
 
         GridView septemberGV = (GridView) myView.findViewById(R.id.gridViewCalendarSeptember);
         septemberGV.setAdapter(new ScheduleCalendarGridViewAdapter(getActivity(), septemberDays));
