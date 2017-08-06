@@ -39,11 +39,8 @@ public class Schedule extends Fragment
 
         Log.d(className,"onCreateView");
 
-        String augustDays[] = {"23", "24", "25", "26", "27", "28", "29", "30", "31"};
-        String septemberDays[] = {"1", "2", "3"};
 
-        GridView augustGV = (GridView) myView.findViewById(R.id.gridViewCalendarAugust);
-        augustGV.setAdapter(new ScheduleCalendarGridViewAdapter(getActivity(), augustDays));
+        String septemberDays[] = {"1", "2", "3" , "4" , "5", "6", "7", "8", "9"};
 
         GridView septemberGV = (GridView) myView.findViewById(R.id.gridViewCalendarSeptember);
         septemberGV.setAdapter(new ScheduleCalendarGridViewAdapter(getActivity(), septemberDays));
