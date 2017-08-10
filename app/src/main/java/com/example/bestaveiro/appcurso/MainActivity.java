@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_horario:
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame
-                                , new horario())
+                                , new Horario())
                         .addToBackStack("op")
                         .commit();
                 fragStack.push(1);
