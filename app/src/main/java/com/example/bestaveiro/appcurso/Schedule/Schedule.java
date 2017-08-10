@@ -2,51 +2,75 @@ package com.example.bestaveiro.appcurso.Schedule;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
+import android.widget.Button;
 
+import com.example.bestaveiro.appcurso.MainActivity;
 import com.example.bestaveiro.appcurso.R;
 import com.example.bestaveiro.appcurso.StaticMethods;
+
 
 /**
  * Created by filipe on 13/05/2016.
  */
-public class Schedule extends Fragment
-{
+public class Schedule extends Fragment{
 
     View myView;
-    String className;
+    Button btn1;
+    Button btn2;
+    FragmentManager fragmentManager;
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        Log.d(getClass().getSimpleName(),"onCreate");
-        className = getClass().getSimpleName();
-        getActivity().setTitle(className);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         StaticMethods.removeTabLayout(getActivity());
 
-        myView = inflater.inflate(R.layout.schedule, container, false);
+        getActivity().setTitle("Schedule");
 
-        Log.d(className,"onCreateView");
+        myView = inflater.inflate(R.layout.horario, container, false);
 
+        btn1 = (Button) myView.findViewById(R.id.btn1);
+        btn2 = (Button) myView.findViewById(R.id.btn2);
 
-        String septemberDays[] = {"1", "2", "3" , "4" , "5", "6", "7", "8", "9"};
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        GridView septemberGV = (GridView) myView.findViewById(R.id.gridViewCalendarSeptember);
-        septemberGV.setAdapter(new ScheduleCalendarGridViewAdapter(getActivity(), septemberDays));
+                ScheduleEvento fragment = new ScheduleEvento();
+                fragmentTransaction.replace(R.id.content_frame, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                MainActivity.fragStack.push(1);
+
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                ScheduleEquipas fragment = new ScheduleEquipas();
+                fragmentTransaction.replace(R.id.content_frame, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                MainActivity.fragStack.push(1);
+
+            }
+        });
+
 
         return myView;
     }
+
+
 
 
 

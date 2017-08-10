@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso.Schedule;
+package com.example.bestaveiro.appcurso.OrganizersHandbook;
 
 import android.content.Context;
 import android.support.v4.app.FragmentManager;
@@ -13,18 +13,16 @@ import android.widget.TextView;
 import com.example.bestaveiro.appcurso.MainActivity;
 import com.example.bestaveiro.appcurso.R;
 
-import java.util.Date;
-
 /**
  * Created by Ricardo on 03/06/2016.
  */
-public class ScheduleCalendarGridViewAdapter extends BaseAdapter
+public class OrganizersHandbookCalendarGridViewAdapter extends BaseAdapter
 {
     Context con;
     String texts[];
     FragmentManager fragManager;
 
-    public ScheduleCalendarGridViewAdapter(Context c, String texts[])
+    public OrganizersHandbookCalendarGridViewAdapter (Context c, String texts[])
     {
         con = c;
         this.texts = texts;

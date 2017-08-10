@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso;
+package com.example.bestaveiro.appcurso.Schedule;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,10 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+
+import com.example.bestaveiro.appcurso.R;
 
 
-public class HorarioEvento extends Fragment
+public class ScheduleEvento extends Fragment
 {
 
     View myView1;
@@ -22,7 +23,6 @@ public class HorarioEvento extends Fragment
         myView1 = inflater.inflate(R.layout.horario_evento, container, false);
 
         image = (ImageView) myView1.findViewById(R.id.imageView1);
-        image.setImageResource(R.mipmap.schedule);
 //        image.setRotation(image.getRotation()+ 90);
 
         return myView1;

@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso;
+package com.example.bestaveiro.appcurso.Schedule;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,8 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.bestaveiro.appcurso.R;
 
-public class HorarioEquipas extends Fragment
+
+public class ScheduleEquipas extends Fragment
 {
 
     View myView3;

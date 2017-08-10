@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.bestaveiro.appcurso.Drinking_G2K.Drinking_G2K;
+import com.example.bestaveiro.appcurso.OrganizersHandbook.OrganizersHandbook;
 import com.example.bestaveiro.appcurso.Schedule.Schedule;
 
 public class MainActivity extends AppCompatActivity
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Muda Isto");
+//        setTitle("Muda Isto");
 
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
         tabs.setVisibility(View.GONE);
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity
         // para começar automaticamente no primeiro fragment
         fragManager.beginTransaction()
                 .replace(R.id.content_frame
-                        , new Schedule())
+                        , new OrganizersHandbook())
                 .commit();
         fragStack.push(0);
         navigationView.getMenu().getItem(0).setChecked(true);
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_schedule:
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame
-                                , new Schedule())
+                                , new OrganizersHandbook())
                         .addToBackStack("op")
                         .commit();
                 fragStack.push(0);
@@ -103,7 +104,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_horario:
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame
-                                , new Horario())
+                                , new Schedule())
                         .addToBackStack("op")
                         .commit();
                 fragStack.push(1);

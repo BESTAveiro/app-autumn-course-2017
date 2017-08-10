@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso.Schedule;
+package com.example.bestaveiro.appcurso.OrganizersHandbook;
 
 import android.app.Fragment;
 import android.content.Context;
