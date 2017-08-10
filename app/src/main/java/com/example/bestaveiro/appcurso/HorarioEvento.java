@@ -23,6 +23,8 @@ public class HorarioEvento extends Fragment
 
         image = (ImageView) myView1.findViewById(R.id.imageView1);
         image.setImageResource(R.mipmap.schedule);
+        image.setRotation(image.getRotation()+ 90);
+
         return myView1;
     }
 

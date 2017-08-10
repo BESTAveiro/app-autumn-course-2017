@@ -22,6 +22,7 @@ public class HorarioEquipas extends Fragment
 
         image = (ImageView) myView3.findViewById(R.id.imageView2);
         image.setImageResource(R.mipmap.logo_ac);
+        image.setRotation(image.getRotation()+ 90);
         return myView3;
     }
 
