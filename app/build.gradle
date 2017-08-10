@@ -27,5 +27,8 @@ dependencies {
     compile 'com.android.support:design:25.4.0'
     compile 'com.android.support:support-v4:25.4.0'
     compile 'com.android.support:recyclerview-v7:25.4.0'
+    // to read PDFs
     compile 'com.github.barteksc:android-pdf-viewer:2.6.1'
+    // to apply zoom to images
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
 }
