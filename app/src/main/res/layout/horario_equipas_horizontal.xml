@@ -7,10 +7,10 @@
 
 
     <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/schedule"
+        android:src="@mipmap/logo_ac_horizontal"
         android:layout_marginBottom="60dp"
         android:scaleType="centerInside"/>
 
@@ -19,8 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        app:fabSize="mini"
         android:src="@mipmap/logo_ac_horizontal"
+        app:fabSize="mini"
         app:backgroundTint="#6DBACD"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp" />

@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
+        android:text="Event"
+        android:padding="30sp"
+        android:textSize="20sp"
         android:background="@drawable/button_border"
-        android:text="Evento" />
+        android:layout_marginTop="110sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btn2" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
         android:background="@drawable/button_border"
-        android:text="Equipas" />
+        android:text="Teams"
+        android:padding="30sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
 
 
 

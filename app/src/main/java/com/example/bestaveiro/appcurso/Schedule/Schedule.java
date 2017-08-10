@@ -10,8 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.bestaveiro.appcurso.MainActivity;
-import com.example.bestaveiro.appcurso.R;
 import com.example.bestaveiro.appcurso.StaticMethods;
+import com.example.bestaveiro.appcurso.R;
+
 
 
 /**
@@ -23,15 +24,16 @@ public class Schedule extends Fragment{
     Button btn1;
     Button btn2;
     FragmentManager fragmentManager;
+    FragmentManager fragmentManager2;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         StaticMethods.removeTabLayout(getActivity());
 
-        getActivity().setTitle("Schedule");
+        getActivity().setTitle("Schedule"); // Nome no separador
 
-        myView = inflater.inflate(R.layout.horario, container, false);
+        myView = inflater.inflate(R.layout.horario, container, false); // Define o layout
 
         btn1 = (Button) myView.findViewById(R.id.btn1);
         btn2 = (Button) myView.findViewById(R.id.btn2);
@@ -39,10 +41,10 @@ public class Schedule extends Fragment{
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleEvento fragment = new ScheduleEvento();
+                ScheduleEventoHorizontal fragment = new ScheduleEventoHorizontal();
                 fragmentTransaction.replace(R.id.content_frame, fragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
@@ -54,13 +56,14 @@ public class Schedule extends Fragment{
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentManager2 = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
 
-                ScheduleEquipas fragment = new ScheduleEquipas();
+                ScheduleEquipasHorizontal fragment = new ScheduleEquipasHorizontal();
                 fragmentTransaction.replace(R.id.content_frame, fragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+
                 MainActivity.fragStack.push(1);
 
             }

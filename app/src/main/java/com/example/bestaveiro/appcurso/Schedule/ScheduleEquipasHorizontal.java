@@ -14,12 +14,14 @@ import com.example.bestaveiro.appcurso.MainActivity;
 import com.example.bestaveiro.appcurso.R;
 
 
-public class ScheduleEquipas extends Fragment
+public class ScheduleEquipasHorizontal extends Fragment
 {
 
-    View myView1;
+    View myView2;
+    ImageView image;
     FragmentManager fragmentManager;
     FragmentManager fragmentManager2;
+
     FloatingActionButton fab;
     FloatingActionButton fab2;
 
@@ -28,9 +30,9 @@ public class ScheduleEquipas extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        myView1 = inflater.inflate(R.layout.horario_equipas, container, false); // Define o layout
+        myView2 = inflater.inflate(R.layout.horario_equipas_horizontal, container, false); // Define o layout
 
-        fab = (FloatingActionButton) myView1.findViewById(R.id.fab);
+        fab = (FloatingActionButton) myView2.findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +40,7 @@ public class ScheduleEquipas extends Fragment
                 fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleEvento fragment = new ScheduleEvento();
+                ScheduleEventoHorizontal fragment = new ScheduleEventoHorizontal();
                 fragmentTransaction.replace(R.id.content_frame, fragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
@@ -47,7 +49,7 @@ public class ScheduleEquipas extends Fragment
             }
         });
 
-        fab2 = (FloatingActionButton) myView1.findViewById(R.id.fab2);
+        fab2 = (FloatingActionButton) myView2.findViewById(R.id.fab2);
 
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,7 +57,7 @@ public class ScheduleEquipas extends Fragment
                 fragmentManager2 = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
 
-                ScheduleEquipasHorizontal fragment = new ScheduleEquipasHorizontal();
+                ScheduleEquipas fragment = new ScheduleEquipas();
                 fragmentTransaction.replace(R.id.content_frame, fragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
@@ -65,7 +67,7 @@ public class ScheduleEquipas extends Fragment
             }
         });
 
-        return myView1;
+        return myView2;
     }
 
 }

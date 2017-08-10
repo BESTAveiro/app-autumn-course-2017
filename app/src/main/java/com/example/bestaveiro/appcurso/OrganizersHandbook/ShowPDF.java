@@ -7,8 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.bestaveiro.appcurso.R;
 import com.github.barteksc.pdfviewer.PDFView;
+import com.example.bestaveiro.appcurso.R;
+
 
 public class ShowPDF extends Fragment
 {

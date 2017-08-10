@@ -1,5 +1,6 @@
 package com.example.bestaveiro.appcurso.Schedule;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -14,12 +15,13 @@ import com.example.bestaveiro.appcurso.MainActivity;
 import com.example.bestaveiro.appcurso.R;
 
 
-public class ScheduleEquipas extends Fragment
+public class ScheduleEventoHorizontal extends Fragment
 {
 
-    View myView1;
+    View myView4;
     FragmentManager fragmentManager;
     FragmentManager fragmentManager2;
+
     FloatingActionButton fab;
     FloatingActionButton fab2;
 
@@ -28,32 +30,15 @@ public class ScheduleEquipas extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        myView1 = inflater.inflate(R.layout.horario_equipas, container, false); // Define o layout
+        myView4 = inflater.inflate(R.layout.horario_evento_horizontal, container, false);
 
-        fab = (FloatingActionButton) myView1.findViewById(R.id.fab);
+        fab = (FloatingActionButton) myView4.findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                ScheduleEvento fragment = new ScheduleEvento();
-                fragmentTransaction.replace(R.id.content_frame, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-                MainActivity.fragStack.push(1);
-
-            }
-        });
-
-        fab2 = (FloatingActionButton) myView1.findViewById(R.id.fab2);
-
-        fab2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragmentManager2 = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
 
                 ScheduleEquipasHorizontal fragment = new ScheduleEquipasHorizontal();
                 fragmentTransaction.replace(R.id.content_frame, fragment);
@@ -65,8 +50,25 @@ public class ScheduleEquipas extends Fragment
             }
         });
 
-        return myView1;
+        fab2 = (FloatingActionButton) myView4.findViewById(R.id.fab2);
+
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragmentManager2 = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
+
+                ScheduleEvento fragment = new ScheduleEvento();
+                fragmentTransaction.replace(R.id.content_frame, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+                MainActivity.fragStack.push(1);
+
+            }
+        });
+
+        return myView4;
     }
 
 }
-
