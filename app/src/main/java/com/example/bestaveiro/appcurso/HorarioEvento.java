@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 
 public class HorarioEvento extends Fragment
@@ -23,7 +22,7 @@ public class HorarioEvento extends Fragment
 
         image = (ImageView) myView1.findViewById(R.id.imageView1);
         image.setImageResource(R.mipmap.schedule);
-        image.setRotation(image.getRotation()+ 90);
+//        image.setRotation(image.getRotation()+ 90);
 
         return myView1;
     }
