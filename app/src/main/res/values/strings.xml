@@ -3,6 +3,256 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="all_drinking_games">
+        <item>Beer Roulette</item>
+        <item>Beer Pong</item>
+        <item>Buzz</item>
+        <item>Blind Date</item>
+        <item>Caps</item>
+        <item>Drug Dealer</item>
+        <item>Fuzzy Duck</item>
+        <item>Irish Christmas Eve</item>
+        <item>Karpets for Game</item>
+        <item>Quarters</item>
+        <item>Signage</item>
+        <item>Spinning Coin</item>
+        <item>The Kings Cup</item>
+        <item>The One Coin</item>
+        <item>Traveling Game</item>
+        <item>Zoom Boing</item>
+    </string-array>
 
+    <string-array name="all_max_players">
+        <item>6</item>
+        <item>32</item>
+        <item>15</item>
+        <item>3</item>
+        <item>8</item>
+        <item>20</item>
+        <item>15</item>
+        <item>20</item>
+        <item>24</item>
+        <item>6</item>
+        <item>10</item>
+        <item>10</item>
+        <item>25</item>
+        <item>15</item>
+        <item>10</item>
+        <item>20</item>
+
+    </string-array>
+
+    <string-array name="all_min_players">
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+        <item>5</item>
+        <item>3</item>
+        <item>6</item>
+        <item>4</item>
+        <item>3</item>
+        <item>5</item>
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="all_materials">
+        <item>6 beers</item>
+        <item>Big plastic cups, two ping pong balls and drinks</item>
+        <item>Drinks</item>
+        <item>Two bottles of vodka.</item>
+        <item>Beer</item>
+        <item>Deck of cards, drinks</item>
+        <item>Drinks</item>
+        <item>One stick per team, one bottle of beer for participant</item>
+        <item>vodka, cups</item>
+        <item>Coins, drinks</item>
+        <item>Beer</item>
+        <item>Drinks, coins</item>
+        <item>Deck of Cards, Drinks for everybody, Empty Cup (the king\'s cup)</item>
+        <item>1 coin</item>
+        <item>A lot of alcohol.</item>
+        <item>Drinks</item>
+    </string-array>
+    <string-array name="all_descriptions">
+        <item>One person takes a six pack of beer out of the room and shakes one of the cans vigorously. That person then brings out the cans and places them in a bag. Everyone picks one beer from the bag. Everyone opens their beer at the same time while holding it directly under their nose. If your beer explodes then you are \'dead\' and you have to sit out the next round. Everyone drinks their opened beers and then the next round proceeds with the remaining survivors. The last one to be \'alive\' wins.</item>
+        <item>Form different teams and organize the game like a championship or whatever you want, each team is formed by two guys. A game is played by two team so you can manage the team such that you can play many games at the same time avoiding to bother the rest of the people. Each team has a set of ten big cups, fill these cups with beer (or whatever) till one quarter then set up the cups like a triangle, first line 5 cups, next line 3 cups, next 2 and 1 cups on the last line. Put one triangle on one side of the table and the other on the opposite side. A team has to stay behind the biggest line of its triangle, behind the edge of the table (you need a quite big table). Then give them two ping pong balls so each team can try to throw its balls into the cups of the opposing team two time one for each player. Every time one player hits one among the owner of the cups has to drink the beer alternatively. If a team gets two cups in the same round it gets a free round and the others miss their own round. Take care that every player when throws doesn\'t cross with his elbow the edge of the table, if he crosses the edge he misses his turn. Go on till one team hits all the cups of the others. During a game each team can ask only two time to rank the opposing team\'s cups forming whatever shape.</item>
+        <item>Sit everyone around in a circle. Choose one person to start. They start by saying the number 1. The person to their left or right (it doesn\'t matter) says then says 2 and so on. When someone is about to say either 7, 11, a multiple of 7 or 11, or a number containing 7, they must say Buzz (Ex. 1, 2, 3, 4, 5, 6, Buzz, 8, 9, 10, Buzz). As soon as someone says Buzz you switch directions. So if you were going to the right you switch to the left. If anyone messes up, everyone drinks. This is supposed to be a quick moving game so if someone thinks for too long, it counts as messing up. It\'s really fun and easy to learn!!</item>
+        <item>Two contestants stand to each other back to back. They wait for a sign from the judge and then they start to drink their bottles. The person who drinks more, wins. The catch is that when you play, you have no idea how much the other person drunk or whether he finished or not. The person who wins, gets to slap the other person.
+
+It is adviced to play this game only if you know that you don\'t have to wake up early next morning.</item>
+        <item>The players sit in a circle. Each player places an open beer in front of him or her and a cap upside down on the beer. The players take turns throwing a cap at someone else\'s beer. If you knock their cap off, they take a drink. If you knock it off twice in a row, you make up a rule and a consequence for breaking the rule. If you knock it off three times, the person has to chug the beer. You keep going until you miss and it is the next persons turn. You are not allowed to adjust your cap on the beer. If you touch it you must drink. If you knock your own cap off, you must finish your beer.</item>
+        <item>Get as many cards as there are players. There should be one ace and one king mixed with the cards. Mix up cards and distribute one to each player. Players look only at their card. The player with the ace is the drug dealer and the person with the king is the cop. The drug dealer must wink at the other players. Any player who sees the wink must then say \'The deal has been made.\' It is up to the cop to determine who the dealer is. For each wrong guess, the cop must drink for 5 seconds. Players may bluff and pretend they saw the wink even if they haven\'t. This is fun with large groups of people because it is harder for the cop to guess. However, if the cop sees the wink, the dealer must drink for 5 seconds.</item>
+        <item>The group of people sit in a circle, preferably around a table. One person starts the game by saying \'Fuzzy Duck\'. The person to the left follows by either saying \'Fuzzy Duck\' again or saying \'Does he?\' If someone says \'Does he?\' the direction of the game changes and the person to the right must say \'Ducky Fuzz\'. If someone says \'Does he?\' then the direction changes again and you go back to saying \'Fuzzy Duck\'. This continues until someone screws up. That person must drink. The point of the game is to say it very fast. Any pause will also cause a person to have to drink.</item>
+        <item>Divide people into 2-4 groups. Number of players in each group should be even. Each team stands in a row. At ten meters away somebody will stand to give beers and count the turns around the stick. At start signal first players of teams run to the beers. They drink the beer as soon as possible. After that they are given stick. One end of the stick should touch the ground and the player should hold the other end of the stick. After 10 turns around the stick player runs back to his/her team mates. The same procedure is repeated. Fastest team wins.</item>
+        <item>It\'s very simple game. Greates adventage of this game is efect on people when You tell the rules. But be carefull! It involves a lot of drinking! And not much more... Rules are like that: Everyone have to hold cup in his/her hand and it must be filled with vodka. You divide people in 4 teams: Team number 1 Team number 2 Team number 3 Team number 4 And then You say! \'And now everyone who has number is number 1 - drinks!\' - and then they have to drink a shot of vodka! Then when everyone is astonished by the simplicity of the game you say: \'And now everyone who has number is number 2 - drinks!\' - and then they have to drink a shot of vodka! Then everybody understand, what is going on. You continue the procedure with number 3 and 4. Then You can go back to begining! Optionaly You can say: \'And now everyone who has number is number 1 and 2 and 3 and 4 - drinks!\' Simple! Isn\'t it :)?</item>
+        <item>Competitors sit around a table, hard wood works best but you might need to experiment. To decide who will go first, spin the quarter. When it stops, it will be pointing at the person that starts. Once established, the game begins. The shooter tries to bounce a quarter off the table and into a glass. If the quarter goes into the glass, the shooter chooses a person at the table to consume. The amount or size of the drink is debatable. This should be decided before the game starts. The shooter\'s turn is over when he/she does not make the quarter in the cup. Play then proceeds the next shooter. To make things more exciting, rules are developed by the shooters only after making three (3) quarters into the glass in a row. If any rules made are broken, the guilty party must consume.</item>
+        <item>Each player picks a sign (i.e.: grab your lip, grab your ear, when you get good at this game you get creative by pretending to whack off...). Each player must show their chosen sign to the others. Then, a player begins, by doing his sign and the sign of another player. That second player must recognise that sign and continue the game, by performing his/hers sign and the sign of another player. This game goes on till someone fuck\'s up. When they do they must drink then they start over. The key to this game is speed. Example of a game: Brenda sticks her tongue out then does Tacha\'s sign which is cuffing her chin. Tacha in turn cuffs her chin then does Keltie\'s sign, grabs her lip... on and on till someone drinks. You can forbid players to go to the bathroom for a while if they make certain mistakes.</item>
+        <item>Preferably players sitting around a table. Each person has a quarter and everyone starts to spin their quarter and if your quarter falls you must start drinking until the last quarter on the table comes to a stop. You might need to mark the quarters so they do not get mixed up. It gets fun when people\'s quarters start to run into each other.</item>
+        <item>Everybody sits around the table. The king\'s Cup is put in the middle. All the cards are then put in a circle around it. On turn everybody draws a card and has to do what the card says. The game is over when the last King is drawn: Ace - Everybody (drinks) Two - is for you - (the person who card has to point somebody who drinks) Three - is for me - (the person drinks) Four - is for whores - (ladies drink) Five - make up a rule: (i.e. no bad words, no \'drink\' words, stripping rules etc...) Six - is for dicks (gentlemen drink) Seven - Seven Game: (you start counting, and whenever there is a number which cointain seven or is a multiple of it, you say \'Fuck You\' and you reverse the direction of counting. For the less math talented people: 1,2,3,4,5,6, FU , 8,9,10,11,12,13, FU , 15....) of course you know what happens when you mess it up eight - don\'t be late - (this card doesn\'t have to be played immediately. the person who draws has to put his/her hand on the table with the thumb pointing up, or touch the table with his/her thumb. the last person who does it drinks) really sneaky rule nine - bust a rhyme - (the person who picked the card has to say a word, and the one next to him ha s to say a word that rhymes with it. The circle goes on until somebody messes up and drink) ten - waterfall - (the person who draws the car start to drink, and after that the person on his right and so on; when the last person has started, the first one can stop drinking, and the circle goes again. Remember to punish everybody that only \'pretends\' to drink!!!) jack - go back - (the person before you drinks, and you can decide to reverse or not the direction of the game) queen - Questions: Chooser turns to the next person and asks a question (ex: Have you ever licked a donkey\'s butt hole?) then that person must turn to the next person and ask a relevant question (ex:Wouldn\'t a Donkeys butt hole taste like candy?) the person who fumbles drinks. King: whoever draws the first king has to pour something into the king\'s cup. the second king allows you to pour two different things, the third one three, and the lucky one who draws the last king has to drink the entire king\'s cup!!! May God have mercy of his soul.</item>
+        <item>Someone is declared coin flipper. He flips the coin for each player. If they guess heads or tails correctly, it goes to the next player. If not, they drink 2 fingers.</item>
+        <item>Every player needs to have one glass of alcohol (have at least two kinds of alcohol around). Then someone starts by saying a European country. Everyone who has been in that country drinks a sip. If no one has been in that country, the one who said the country bottoms his/her glass. Then everyone passes his/her glass to the next person and someone else says a country.
+
+If someone says a country already mentioned, he/she drinks a sip and says another country and keeps going on until a new country is mentioned.
+
+If you want to make people wasted even faster, have more kinds of alcohol going around and make people drink even if they flew through the country (like if went from Italy to Denmark, you have to drink for Germany and Austria too).
+
+Have fun and enjoy this game!</item>
+        <item>This is a speaking game, passing the turn around te circle by using specific words and looking at the right direction.
+
+There is no right or wrong word, you may choose what to say avery time it\'s your turn, but you have to look at the right direction and always pay attention it is your turn or not!!!
+
+I like to devide the game in 3 steps for ppl to learn it:
+
+First round (beginners): You only need the words \'Zoom\' and \'Boing\'. Person A begins by saying \'zoom\' and looking at the next person B to the right. Now it\'s B\'s turn. He can either say \'zoom\' and look at C or he can say boing and look at A. The person he looks at should speak... and so on.
+So: zoom= look at the next person, boing= look at the previous person (the person that just spoke before you)
+
+Secont roung (after you manage to get the first round right for a couple of turns): Now let\'s add \'zorch\' to the game. \'Zorch\' looks like a zoom but it\'s actually a boing. A says \'zoom\' and looks at B, B says \'zorch\' looks at C but it is  A who has to talk now!!!
+So: zorch= looks like a zoom but it\'s a boing. You look at the next person but the previous one has to respond
+
+Third round (experts): The last word you add to this game is \'mac-filiano\'. This one looks like a boing but it\'s actually a zoom. A says \'zoom\' and looks at B, B says \'mac-filiano\' looks at A but it is C who has to speak.
+So: mac-filiano= looks like a boing but it\'s a zoom. You look at the previous person but the next one has to respond.
+
+
+
+No need to say, loser drinks.
+
+It\'s a very fast, interesting and fun game. Give it a try and enjoy!
+
+</item>
+
+
+<!--GET2KNOW-->
+
+
+    </string-array>
+
+    <string-array name="all_get2Know_games">
+        <item>Beer Roulette</item>
+        <item>Beer Pong</item>
+        <item>Buzz</item>
+        <item>Blind Date</item>
+        <item>Caps</item>
+        <item>Drug Dealer</item>
+        <item>Fuzzy Duck</item>
+        <item>Irish Christmas Eve</item>
+        <item>Karpets for Game</item>
+        <item>Quarters</item>
+        <item>Signage</item>
+        <item>Spinning Coin</item>
+        <item>The Kings Cup</item>
+        <item>The One Coin</item>
+        <item>Traveling Game</item>
+        <item>Zoom Boing</item>
+    </string-array>
+
+    <string-array name="all_max_players_g2k">
+        <item>6</item>
+        <item>32</item>
+        <item>15</item>
+        <item>3</item>
+        <item>8</item>
+        <item>20</item>
+        <item>15</item>
+        <item>20</item>
+        <item>24</item>
+        <item>6</item>
+        <item>10</item>
+        <item>10</item>
+        <item>25</item>
+        <item>15</item>
+        <item>10</item>
+        <item>20</item>
+
+    </string-array>
+
+    <string-array name="all_min_players_g2k">
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+        <item>5</item>
+        <item>3</item>
+        <item>6</item>
+        <item>4</item>
+        <item>3</item>
+        <item>5</item>
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="all_materials_g2k">
+        <item>6 beers</item>
+        <item>Big plastic cups, two ping pong balls and drinks</item>
+        <item>Drinks</item>
+        <item>Two bottles of vodka.</item>
+        <item>Beer</item>
+        <item>Deck of cards, drinks</item>
+        <item>Drinks</item>
+        <item>One stick per team, one bottle of beer for participant</item>
+        <item>vodka, cups</item>
+        <item>Coins, drinks</item>
+        <item>Beer</item>
+        <item>Drinks, coins</item>
+        <item>Deck of Cards, Drinks for everybody, Empty Cup (the king\'s cup)</item>
+        <item>1 coin</item>
+        <item>A lot of alcohol.</item>
+        <item>Drinks</item>
+    </string-array>
+    <string-array name="all_descriptions_g2k">
+    <item>One person takes a six pack of beer out of the room and shakes one of the cans vigorously. That person then brings out the cans and places them in a bag. Everyone picks one beer from the bag. Everyone opens their beer at the same time while holding it directly under their nose. If your beer explodes then you are \'dead\' and you have to sit out the next round. Everyone drinks their opened beers and then the next round proceeds with the remaining survivors. The last one to be \'alive\' wins.</item>
+    <item>Form different teams and organize the game like a championship or whatever you want, each team is formed by two guys. A game is played by two team so you can manage the team such that you can play many games at the same time avoiding to bother the rest of the people. Each team has a set of ten big cups, fill these cups with beer (or whatever) till one quarter then set up the cups like a triangle, first line 5 cups, next line 3 cups, next 2 and 1 cups on the last line. Put one triangle on one side of the table and the other on the opposite side. A team has to stay behind the biggest line of its triangle, behind the edge of the table (you need a quite big table). Then give them two ping pong balls so each team can try to throw its balls into the cups of the opposing team two time one for each player. Every time one player hits one among the owner of the cups has to drink the beer alternatively. If a team gets two cups in the same round it gets a free round and the others miss their own round. Take care that every player when throws doesn\'t cross with his elbow the edge of the table, if he crosses the edge he misses his turn. Go on till one team hits all the cups of the others. During a game each team can ask only two time to rank the opposing team\'s cups forming whatever shape.</item>
+    <item>Sit everyone around in a circle. Choose one person to start. They start by saying the number 1. The person to their left or right (it doesn\'t matter) says then says 2 and so on. When someone is about to say either 7, 11, a multiple of 7 or 11, or a number containing 7, they must say Buzz (Ex. 1, 2, 3, 4, 5, 6, Buzz, 8, 9, 10, Buzz). As soon as someone says Buzz you switch directions. So if you were going to the right you switch to the left. If anyone messes up, everyone drinks. This is supposed to be a quick moving game so if someone thinks for too long, it counts as messing up. It\'s really fun and easy to learn!!</item>
+    <item>Two contestants stand to each other back to back. They wait for a sign from the judge and then they start to drink their bottles. The person who drinks more, wins. The catch is that when you play, you have no idea how much the other person drunk or whether he finished or not. The person who wins, gets to slap the other person.
+
+        It is adviced to play this game only if you know that you don\'t have to wake up early next morning.</item>
+    <item>The players sit in a circle. Each player places an open beer in front of him or her and a cap upside down on the beer. The players take turns throwing a cap at someone else\'s beer. If you knock their cap off, they take a drink. If you knock it off twice in a row, you make up a rule and a consequence for breaking the rule. If you knock it off three times, the person has to chug the beer. You keep going until you miss and it is the next persons turn. You are not allowed to adjust your cap on the beer. If you touch it you must drink. If you knock your own cap off, you must finish your beer.</item>
+    <item>Get as many cards as there are players. There should be one ace and one king mixed with the cards. Mix up cards and distribute one to each player. Players look only at their card. The player with the ace is the drug dealer and the person with the king is the cop. The drug dealer must wink at the other players. Any player who sees the wink must then say \'The deal has been made.\' It is up to the cop to determine who the dealer is. For each wrong guess, the cop must drink for 5 seconds. Players may bluff and pretend they saw the wink even if they haven\'t. This is fun with large groups of people because it is harder for the cop to guess. However, if the cop sees the wink, the dealer must drink for 5 seconds.</item>
+    <item>The group of people sit in a circle, preferably around a table. One person starts the game by saying \'Fuzzy Duck\'. The person to the left follows by either saying \'Fuzzy Duck\' again or saying \'Does he?\' If someone says \'Does he?\' the direction of the game changes and the person to the right must say \'Ducky Fuzz\'. If someone says \'Does he?\' then the direction changes again and you go back to saying \'Fuzzy Duck\'. This continues until someone screws up. That person must drink. The point of the game is to say it very fast. Any pause will also cause a person to have to drink.</item>
+    <item>Divide people into 2-4 groups. Number of players in each group should be even. Each team stands in a row. At ten meters away somebody will stand to give beers and count the turns around the stick. At start signal first players of teams run to the beers. They drink the beer as soon as possible. After that they are given stick. One end of the stick should touch the ground and the player should hold the other end of the stick. After 10 turns around the stick player runs back to his/her team mates. The same procedure is repeated. Fastest team wins.</item>
+    <item>It\'s very simple game. Greates adventage of this game is efect on people when You tell the rules. But be carefull! It involves a lot of drinking! And not much more... Rules are like that: Everyone have to hold cup in his/her hand and it must be filled with vodka. You divide people in 4 teams: Team number 1 Team number 2 Team number 3 Team number 4 And then You say! \'And now everyone who has number is number 1 - drinks!\' - and then they have to drink a shot of vodka! Then when everyone is astonished by the simplicity of the game you say: \'And now everyone who has number is number 2 - drinks!\' - and then they have to drink a shot of vodka! Then everybody understand, what is going on. You continue the procedure with number 3 and 4. Then You can go back to begining! Optionaly You can say: \'And now everyone who has number is number 1 and 2 and 3 and 4 - drinks!\' Simple! Isn\'t it :)?</item>
+    <item>Competitors sit around a table, hard wood works best but you might need to experiment. To decide who will go first, spin the quarter. When it stops, it will be pointing at the person that starts. Once established, the game begins. The shooter tries to bounce a quarter off the table and into a glass. If the quarter goes into the glass, the shooter chooses a person at the table to consume. The amount or size of the drink is debatable. This should be decided before the game starts. The shooter\'s turn is over when he/she does not make the quarter in the cup. Play then proceeds the next shooter. To make things more exciting, rules are developed by the shooters only after making three (3) quarters into the glass in a row. If any rules made are broken, the guilty party must consume.</item>
+    <item>Each player picks a sign (i.e.: grab your lip, grab your ear, when you get good at this game you get creative by pretending to whack off...). Each player must show their chosen sign to the others. Then, a player begins, by doing his sign and the sign of another player. That second player must recognise that sign and continue the game, by performing his/hers sign and the sign of another player. This game goes on till someone fuck\'s up. When they do they must drink then they start over. The key to this game is speed. Example of a game: Brenda sticks her tongue out then does Tacha\'s sign which is cuffing her chin. Tacha in turn cuffs her chin then does Keltie\'s sign, grabs her lip... on and on till someone drinks. You can forbid players to go to the bathroom for a while if they make certain mistakes.</item>
+    <item>Preferably players sitting around a table. Each person has a quarter and everyone starts to spin their quarter and if your quarter falls you must start drinking until the last quarter on the table comes to a stop. You might need to mark the quarters so they do not get mixed up. It gets fun when people\'s quarters start to run into each other.</item>
+    <item>Everybody sits around the table. The king\'s Cup is put in the middle. All the cards are then put in a circle around it. On turn everybody draws a card and has to do what the card says. The game is over when the last King is drawn: Ace - Everybody (drinks) Two - is for you - (the person who card has to point somebody who drinks) Three - is for me - (the person drinks) Four - is for whores - (ladies drink) Five - make up a rule: (i.e. no bad words, no \'drink\' words, stripping rules etc...) Six - is for dicks (gentlemen drink) Seven - Seven Game: (you start counting, and whenever there is a number which cointain seven or is a multiple of it, you say \'Fuck You\' and you reverse the direction of counting. For the less math talented people: 1,2,3,4,5,6, FU , 8,9,10,11,12,13, FU , 15....) of course you know what happens when you mess it up eight - don\'t be late - (this card doesn\'t have to be played immediately. the person who draws has to put his/her hand on the table with the thumb pointing up, or touch the table with his/her thumb. the last person who does it drinks) really sneaky rule nine - bust a rhyme - (the person who picked the card has to say a word, and the one next to him ha s to say a word that rhymes with it. The circle goes on until somebody messes up and drink) ten - waterfall - (the person who draws the car start to drink, and after that the person on his right and so on; when the last person has started, the first one can stop drinking, and the circle goes again. Remember to punish everybody that only \'pretends\' to drink!!!) jack - go back - (the person before you drinks, and you can decide to reverse or not the direction of the game) queen - Questions: Chooser turns to the next person and asks a question (ex: Have you ever licked a donkey\'s butt hole?) then that person must turn to the next person and ask a relevant question (ex:Wouldn\'t a Donkeys butt hole taste like candy?) the person who fumbles drinks. King: whoever draws the first king has to pour something into the king\'s cup. the second king allows you to pour two different things, the third one three, and the lucky one who draws the last king has to drink the entire king\'s cup!!! May God have mercy of his soul.</item>
+    <item>Someone is declared coin flipper. He flips the coin for each player. If they guess heads or tails correctly, it goes to the next player. If not, they drink 2 fingers.</item>
+    <item>Every player needs to have one glass of alcohol (have at least two kinds of alcohol around). Then someone starts by saying a European country. Everyone who has been in that country drinks a sip. If no one has been in that country, the one who said the country bottoms his/her glass. Then everyone passes his/her glass to the next person and someone else says a country.
+
+        If someone says a country already mentioned, he/she drinks a sip and says another country and keeps going on until a new country is mentioned.
+
+        If you want to make people wasted even faster, have more kinds of alcohol going around and make people drink even if they flew through the country (like if went from Italy to Denmark, you have to drink for Germany and Austria too).
+
+        Have fun and enjoy this game!</item>
+    <item>This is a speaking game, passing the turn around te circle by using specific words and looking at the right direction.
+
+        There is no right or wrong word, you may choose what to say avery time it\'s your turn, but you have to look at the right direction and always pay attention it is your turn or not!!!
+
+        I like to devide the game in 3 steps for ppl to learn it:
+
+        First round (beginners): You only need the words \'Zoom\' and \'Boing\'. Person A begins by saying \'zoom\' and looking at the next person B to the right. Now it\'s B\'s turn. He can either say \'zoom\' and look at C or he can say boing and look at A. The person he looks at should speak... and so on.
+        So: zoom= look at the next person, boing= look at the previous person (the person that just spoke before you)
+
+        Secont roung (after you manage to get the first round right for a couple of turns): Now let\'s add \'zorch\' to the game. \'Zorch\' looks like a zoom but it\'s actually a boing. A says \'zoom\' and looks at B, B says \'zorch\' looks at C but it is  A who has to talk now!!!
+        So: zorch= looks like a zoom but it\'s a boing. You look at the next person but the previous one has to respond
+
+        Third round (experts): The last word you add to this game is \'mac-filiano\'. This one looks like a boing but it\'s actually a zoom. A says \'zoom\' and looks at B, B says \'mac-filiano\' looks at A but it is C who has to speak.
+        So: mac-filiano= looks like a boing but it\'s a zoom. You look at the previous person but the next one has to respond.
+
+
+
+        No need to say, loser drinks.
+
+        It\'s a very fast, interesting and fun game. Give it a try and enjoy!
+
+    </item>
+    </string-array>
 
 </resources>

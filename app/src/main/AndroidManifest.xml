@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.example.bestaveiro.appcurso"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bestaveiro.appcurso">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true"/>
-    <uses-feature android:name="android.hardware.camera.autofocus"/>
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name=".GlobalContext"
@@ -25,9 +25,14 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Drinking_G2K.DrinkingGameList" />
+        <activity android:name=".Drinking_G2K.DrinkingGameDescription" />
+        <activity android:name=".Drinking_G2K.Get2KnowGameList" />
+        <activity android:name=".Drinking_G2K.Get2KnowGameDescription"></activity>
     </application>
 
 </manifest>
