@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso;
+package bestaveiro.autumncourse2017;
 
 import android.app.Application;
 import android.content.Context;

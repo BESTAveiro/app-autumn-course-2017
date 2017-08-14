@@ -1,10 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion '26.0.1'
     defaultConfig {
-        applicationId "com.example.bestaveiro.appcurso"
+        applicationId 'bestaveiro.autumncourse2017'
         minSdkVersion 18
         targetSdkVersion 22
         versionCode 1
@@ -31,7 +35,6 @@ dependencies {
     compile 'com.github.barteksc:android-pdf-viewer:2.6.1'
     // to apply zoom to images
     compile 'com.github.chrisbanes:PhotoView:2.0.0'
-
     compile 'com.android.support:appcompat-v7:25.4.0'
     compile 'com.android.support:design:25.4.0'
     compile 'com.android.support:support-v4:25.4.0'

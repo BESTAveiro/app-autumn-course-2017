@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso.Drinking_G2K;
+package bestaveiro.autumncourse2017.Drinking_G2K;
 
 
 import android.os.Bundle;
@@ -7,17 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.bestaveiro.appcurso.R;
+import bestaveiro.autumncourse2017.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Drinking extends Fragment
+public class G2K extends Fragment
 {
 
-    static String className = "Drinking";
+    static String className = "G2K";
 
-    public Drinking()
+    public G2K()
     {
         // Required empty public constructor
     }
@@ -28,7 +28,7 @@ public class Drinking extends Fragment
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_drinking, container, false);
+        return inflater.inflate(R.layout.fragment_g2_k, container, false);
     }
 
 }

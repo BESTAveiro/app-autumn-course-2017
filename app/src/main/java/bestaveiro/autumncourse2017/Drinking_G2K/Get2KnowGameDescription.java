@@ -1,12 +1,12 @@
-package com.example.bestaveiro.appcurso.Drinking_G2K;
+package bestaveiro.autumncourse2017.Drinking_G2K;
 
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.bestaveiro.appcurso.R;
+import bestaveiro.autumncourse2017.R;
 
 public class Get2KnowGameDescription extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso;
+package bestaveiro.autumncourse2017;
 
 import android.app.Activity;
 import android.support.design.widget.TabLayout;

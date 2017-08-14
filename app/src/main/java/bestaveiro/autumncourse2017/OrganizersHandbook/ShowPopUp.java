@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso.OrganizersHandbook;
+package bestaveiro.autumncourse2017.OrganizersHandbook;
 
 import android.app.Fragment;
 import android.content.Context;

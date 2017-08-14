@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso.OrganizersHandbook;
+package bestaveiro.autumncourse2017.OrganizersHandbook;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,8 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import com.example.bestaveiro.appcurso.R;
-import com.example.bestaveiro.appcurso.StaticMethods;
+import bestaveiro.autumncourse2017.R;
+
+import bestaveiro.autumncourse2017.StaticMethods;
 
 /**
  * Created by filipe on 13/05/2016.

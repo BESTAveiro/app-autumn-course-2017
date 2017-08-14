@@ -1,10 +1,9 @@
-package com.example.bestaveiro.appcurso.Drinking_G2K;
+package bestaveiro.autumncourse2017.Drinking_G2K;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.bestaveiro.appcurso.R;
+import bestaveiro.autumncourse2017.R;
+
 
 public class DrinkingGameList extends AppCompatActivity {
 

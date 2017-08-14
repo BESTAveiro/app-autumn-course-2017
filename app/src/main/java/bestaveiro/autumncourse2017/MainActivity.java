@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso;
+package bestaveiro.autumncourse2017;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -13,9 +13,9 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.bestaveiro.appcurso.Drinking_G2K.Drinking_G2K;
-import com.example.bestaveiro.appcurso.OrganizersHandbook.OrganizersHandbook;
-import com.example.bestaveiro.appcurso.Schedule.Schedule;
+import bestaveiro.autumncourse2017.Drinking_G2K.Drinking_G2K;
+import bestaveiro.autumncourse2017.OrganizersHandbook.OrganizersHandbook;
+import bestaveiro.autumncourse2017.Schedule.Schedule;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener

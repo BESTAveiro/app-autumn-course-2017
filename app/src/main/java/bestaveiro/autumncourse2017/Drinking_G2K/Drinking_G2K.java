@@ -1,4 +1,4 @@
-package com.example.bestaveiro.appcurso.Drinking_G2K;
+package bestaveiro.autumncourse2017.Drinking_G2K;
 
 
 import android.os.Bundle;
@@ -13,11 +13,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.bestaveiro.appcurso.R;
-import com.example.bestaveiro.appcurso.StaticMethods;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import bestaveiro.autumncourse2017.R;
+import bestaveiro.autumncourse2017.StaticMethods;
 
 
 public class Drinking_G2K extends Fragment

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    tools:context="com.example.bestaveiro.appcurso.MainActivity">
+    tools:context="com.example.bestaveiro.autumncourse2017.MainActivity">
 
 
     <android.support.design.widget.AppBarLayout
