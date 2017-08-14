@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017.OrganizersHandbook;
+package com.ua.bestaveiro.autumncourse2017.OrganizersHandbook;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,9 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import bestaveiro.autumncourse2017.R;
-
-import bestaveiro.autumncourse2017.StaticMethods;
+import com.ua.bestaveiro.autumncourse2017.R;
+import com.ua.bestaveiro.autumncourse2017.StaticMethods;
 
 /**
  * Created by filipe on 13/05/2016.

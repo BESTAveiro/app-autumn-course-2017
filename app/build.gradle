@@ -3,6 +3,10 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
+            keyAlias 'autumnCourseKey'
+            keyPassword 'pvrzmhczylbtwkaxfjpimdteopxtcesmhhfhfrpc'
+            storeFile file('C:/Users/Ricardo/Desktop/Projetos Android/AppCurso-2016-05-17/AppCurso/keystore.jks')
+            storePassword 'xjfgdphqhfzhjfwpxehesvkalqcxvkoobagbmmhl'
         }
     }
     compileSdkVersion 26

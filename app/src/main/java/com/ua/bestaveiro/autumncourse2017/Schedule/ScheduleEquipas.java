@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017.Schedule;
+package com.ua.bestaveiro.autumncourse2017.Schedule;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,9 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import bestaveiro.autumncourse2017.R;
-
-import bestaveiro.autumncourse2017.MainActivity;
+import com.ua.bestaveiro.autumncourse2017.MainActivity;
+import com.ua.bestaveiro.autumncourse2017.R;
 
 
 public class ScheduleEquipas extends Fragment

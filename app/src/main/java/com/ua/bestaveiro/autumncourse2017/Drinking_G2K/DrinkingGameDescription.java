@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017.Drinking_G2K;
+package com.ua.bestaveiro.autumncourse2017.Drinking_G2K;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
-import bestaveiro.autumncourse2017.R;
+import com.ua.bestaveiro.autumncourse2017.R;
 
-public class Get2KnowGameDescription extends AppCompatActivity {
+public class DrinkingGameDescription extends AppCompatActivity {
 
-    String[] all_get2know_names;
+    String[] all_drinking_names;
 
     String[] all_min_players;
 
@@ -20,22 +20,24 @@ public class Get2KnowGameDescription extends AppCompatActivity {
 
     String[] all_descriptions;
 
-    int position;
 
+    int position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get2_know_game_description);
+        setContentView(R.layout.activity_drinking_game_description);
 
-        all_get2know_names=getResources().getStringArray(R.array.all_get2Know_games);
+        all_drinking_names=getResources().getStringArray(R.array.all_drinking_games);
 
-        all_min_players=getResources().getStringArray(R.array.all_min_players_g2k);
+        all_min_players=getResources().getStringArray(R.array.all_min_players);
 
-        all_max_players=getResources().getStringArray(R.array.all_max_players_g2k);
+        all_max_players=getResources().getStringArray(R.array.all_max_players);
 
-        all_materials=getResources().getStringArray(R.array.all_materials_g2k);
+        all_materials=getResources().getStringArray(R.array.all_materials);
 
-        all_descriptions=getResources().getStringArray(R.array.all_descriptions_g2k);
+        all_descriptions=getResources().getStringArray(R.array.all_descriptions);
 
         position=getIntent().getIntExtra("position",0);
 
@@ -44,7 +46,7 @@ public class Get2KnowGameDescription extends AppCompatActivity {
         //Botão
         Button bt=(Button) findViewById(R.id.buttonBeerRoulette);
         bt.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/neo.ttf"));
-        bt.setText(all_get2know_names[position]);
+        bt.setText(all_drinking_names[position]);
 
         //texto estatico
         TextView tv1=(TextView) findViewById(R.id.MinPlayers);
@@ -70,5 +72,7 @@ public class Get2KnowGameDescription extends AppCompatActivity {
         TextView tv7=(TextView) findViewById(R.id.Description);
         tv7.setTypeface(tf2);
         tv7.setText(all_descriptions[position]);
+
+
     }
 }

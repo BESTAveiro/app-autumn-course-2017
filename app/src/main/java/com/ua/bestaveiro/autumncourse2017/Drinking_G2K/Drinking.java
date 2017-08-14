@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017.Drinking_G2K;
+package com.ua.bestaveiro.autumncourse2017.Drinking_G2K;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import bestaveiro.autumncourse2017.R;
+import com.ua.bestaveiro.autumncourse2017.R;
 
 /**
  * A simple {@link Fragment} subclass.

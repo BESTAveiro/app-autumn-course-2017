@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017;
+package com.ua.bestaveiro.autumncourse2017;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -13,15 +13,16 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import bestaveiro.autumncourse2017.Drinking_G2K.Drinking_G2K;
-import bestaveiro.autumncourse2017.OrganizersHandbook.OrganizersHandbook;
-import bestaveiro.autumncourse2017.Schedule.Schedule;
+import com.ua.bestaveiro.autumncourse2017.Drinking_G2K.Drinking_G2K;
+import com.ua.bestaveiro.autumncourse2017.OrganizersHandbook.OrganizersHandbook;
+import com.ua.bestaveiro.autumncourse2017.Schedule.Schedule;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
     FragmentManager fragManager;
-    public static FragmentStack fragStack;
+    public static bestaveiro.autumncourse2017.FragmentStack fragStack;
     NavigationView navigationView;
 
     @Override
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
 
-        fragStack = new FragmentStack();
+        fragStack = new bestaveiro.autumncourse2017.FragmentStack();
 
         fragManager = getSupportFragmentManager();
 

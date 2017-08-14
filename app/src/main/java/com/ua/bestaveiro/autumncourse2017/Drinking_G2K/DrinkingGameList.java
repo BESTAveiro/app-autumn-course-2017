@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017.Drinking_G2K;
+package com.ua.bestaveiro.autumncourse2017.Drinking_G2K;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -12,22 +12,23 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import bestaveiro.autumncourse2017.R;
+import com.ua.bestaveiro.autumncourse2017.R;
 
-public class Get2KnowGameList extends AppCompatActivity {
+
+public class DrinkingGameList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get2_know_game_list);
+        setContentView(R.layout.activity_drinking_game_list);
 
-        ListView lv = (ListView) findViewById(R.id.list_view_get2know);
+        ListView lv = (ListView) findViewById(R.id.list_view_drinking);
         lv.setAdapter(new ListViewAdapter());
         lv.setDivider(null);
 
 
         Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/neo.ttf");
-        TextView tv=(TextView) findViewById(R.id.Get2KnowGameTitleFont);
+        TextView tv=(TextView) findViewById(R.id.DrinkingGameTitleFont);
         tv.setTypeface(tf);
     }
 
@@ -40,7 +41,7 @@ public class Get2KnowGameList extends AppCompatActivity {
 
         public ListViewAdapter() {
 
-            all_games=getResources().getStringArray(R.array.all_get2Know_games);////////
+            all_games=getResources().getStringArray(R.array.all_drinking_games);
 
         }
 
@@ -73,7 +74,7 @@ public class Get2KnowGameList extends AppCompatActivity {
             ((Button)v.findViewById(R.id.buttonBeerRoulette)).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent tmp=new Intent(Get2KnowGameList.this, DrinkingGameDescription.class);
+                    Intent tmp=new Intent(DrinkingGameList.this, DrinkingGameDescription.class);
                     startActivity(tmp);
                 }
             });

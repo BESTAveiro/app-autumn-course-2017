@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017.OrganizersHandbook;
+package com.ua.bestaveiro.autumncourse2017.OrganizersHandbook;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-import bestaveiro.autumncourse2017.R;
+import com.ua.bestaveiro.autumncourse2017.R;
 
 
 public class ShowPDF extends Fragment
