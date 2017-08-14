@@ -1,6 +1,5 @@
 package com.example.bestaveiro.appcurso.Schedule;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.example.bestaveiro.appcurso.MainActivity;
 import com.example.bestaveiro.appcurso.R;
@@ -19,9 +17,8 @@ public class ScheduleEvento extends Fragment
 {
 
     View myView3;
-//    ImageView image;
+    //    ImageView image;
     FragmentManager fragmentManager;
-    FragmentManager fragmentManager2;
     FloatingActionButton fab;
     FloatingActionButton fab2;
 
@@ -33,19 +30,20 @@ public class ScheduleEvento extends Fragment
     {
         myView3 = inflater.inflate(R.layout.horario_evento, container, false);
 
+        fragmentManager = getFragmentManager();
 
         fab = (FloatingActionButton) myView3.findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager = getFragmentManager();
+
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleEquipas fragment = new ScheduleEquipas();
-                fragmentTransaction.replace(R.id.content_frame, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.replace(R.id.content_frame, new ScheduleEquipas())
+                        .addToBackStack(null)
+                        .commit();
+
                 MainActivity.fragStack.push(1);
 
             }
@@ -56,13 +54,11 @@ public class ScheduleEvento extends Fragment
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager2 = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleEventoHorizontal fragment = new ScheduleEventoHorizontal();
-                fragmentTransaction.replace(R.id.content_frame, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.replace(R.id.content_frame, new ScheduleEventoHorizontal())
+                        .addToBackStack(null)
+                        .commit();
 
                 MainActivity.fragStack.push(1);
 
