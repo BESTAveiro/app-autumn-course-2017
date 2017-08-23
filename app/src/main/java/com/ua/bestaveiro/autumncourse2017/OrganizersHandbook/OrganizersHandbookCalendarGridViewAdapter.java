@@ -52,6 +52,7 @@ public class OrganizersHandbookCalendarGridViewAdapter extends BaseAdapter
     {
         if(convertView == null)
         {
+
             convertView = LayoutInflater.from(con).inflate(R.layout.schedule_calendar_item, null);
         }
 

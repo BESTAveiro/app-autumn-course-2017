@@ -15,7 +15,7 @@ import com.ua.bestaveiro.autumncourse2017.R;
 public class Drinking extends Fragment
 {
 
-    static String className = "Drinking";
+    static String className = "Drinking Games";
 
     public Drinking()
     {

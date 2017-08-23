@@ -9,9 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium Text"
-        android:textSize="50dp"
+        android:textSize="18dp"
         style="@style/CalendarText"
         android:id="@+id/schedule_calendar_day"
-        android:layout_gravity="center"/>
+        android:layout_marginBottom="40dp"
+        android:layout_gravity=""/>
 
 </LinearLayout>

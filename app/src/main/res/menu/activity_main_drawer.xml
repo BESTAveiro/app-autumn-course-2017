@@ -13,7 +13,7 @@
         <item
             android:id="@+id/nav_drinking_get2know"
             android:icon="@drawable/book"
-            android:title="Drinking e G2K" />
+            android:title="Drinking and G2K" />
     </group>
 
 </menu>

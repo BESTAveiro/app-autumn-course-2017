@@ -15,7 +15,7 @@ import com.ua.bestaveiro.autumncourse2017.R;
 public class G2K extends Fragment
 {
 
-    static String className = "G2K";
+    static String className = "Get to Know";
 
     public G2K()
     {

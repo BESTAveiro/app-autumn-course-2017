@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bestaveiro.autumncourse2017.Drinking_G2K.DrinkingGameDescription">
+    tools:context="com.ua.bestaveiro.autumncourse2017.Drinking_G2K.DrinkingGameDescription">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

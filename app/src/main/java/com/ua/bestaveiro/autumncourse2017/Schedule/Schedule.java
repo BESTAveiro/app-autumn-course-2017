@@ -37,6 +37,7 @@ public class Schedule extends Fragment{
         btn1 = (Button) myView.findViewById(R.id.btn1);
         btn2 = (Button) myView.findViewById(R.id.btn2);
 
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +49,7 @@ public class Schedule extends Fragment{
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 MainActivity.fragStack.push(1);
+
 
             }
         });

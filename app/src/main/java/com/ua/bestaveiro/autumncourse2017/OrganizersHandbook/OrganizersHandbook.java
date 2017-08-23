@@ -40,10 +40,14 @@ public class OrganizersHandbook extends Fragment
         Log.d(className,"onCreateView");
 
 
-        String septemberDays[] = {"1", "2", "3" , "4" , "5", "6", "7", "8", "9"};
+        String septemberDays[] = {"1 Friday", "2 Sunday", "3 Saturday" , "4 Monday" ,
+                "5 Tuesday", "6 Wednesday", "7 Thursday ", "8 Friday", "9 Sunday"};
+
+
 
         GridView septemberGV = (GridView) myView.findViewById(R.id.gridViewCalendarSeptember);
         septemberGV.setAdapter(new OrganizersHandbookCalendarGridViewAdapter(getActivity(), septemberDays));
+
 
         return myView;
     }

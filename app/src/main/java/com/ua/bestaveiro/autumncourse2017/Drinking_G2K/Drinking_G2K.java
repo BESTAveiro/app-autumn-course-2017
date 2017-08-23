@@ -43,6 +43,8 @@ public class Drinking_G2K extends Fragment
 
         StaticMethods.removeTabLayout(getActivity());
 
+        getActivity().setTitle("Drinking and G2K"); // Nome no separador
+
         viewPager = (ViewPager) myView.findViewById(R.id.viewpager_drinking_g2k);
         setupViewPager(viewPager);
 
