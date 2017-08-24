@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
     FragmentManager fragManager;
-    public static bestaveiro.autumncourse2017.FragmentStack fragStack;
+    public static FragmentStack fragStack;
     NavigationView navigationView;
 
     @Override
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
 
-        fragStack = new bestaveiro.autumncourse2017.FragmentStack();
+        fragStack = new FragmentStack();
 
         fragManager = getSupportFragmentManager();
 

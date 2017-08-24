@@ -1,4 +1,4 @@
-package bestaveiro.autumncourse2017;
+package com.ua.bestaveiro.autumncourse2017;
 
 import java.util.ArrayList;
 

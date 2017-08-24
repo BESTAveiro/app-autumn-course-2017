@@ -23,7 +23,6 @@ public class Schedule extends Fragment{
     Button btn1;
     Button btn2;
     FragmentManager fragmentManager;
-    FragmentManager fragmentManager2;
 
 
     @Override
@@ -37,17 +36,18 @@ public class Schedule extends Fragment{
         btn1 = (Button) myView.findViewById(R.id.btn1);
         btn2 = (Button) myView.findViewById(R.id.btn2);
 
+        fragmentManager = getFragmentManager();
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager = getFragmentManager();
+
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleEventoHorizontal fragment = new ScheduleEventoHorizontal();
-                fragmentTransaction.replace(R.id.content_frame, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.replace(R.id.content_frame, new ScheduleEventoHorizontal())
+                        .addToBackStack(null)
+                        .commit();
                 MainActivity.fragStack.push(1);
 
 
@@ -57,13 +57,11 @@ public class Schedule extends Fragment{
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager2 = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleEquipasHorizontal fragment = new ScheduleEquipasHorizontal();
-                fragmentTransaction.replace(R.id.content_frame, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.replace(R.id.content_frame, new ScheduleEquipasHorizontal())
+                        .addToBackStack(null)
+                        .commit();
 
                 MainActivity.fragStack.push(1);
 

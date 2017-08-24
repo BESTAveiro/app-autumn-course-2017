@@ -27,7 +27,6 @@ public class OrganizersHandbook extends Fragment
         super.onCreate(savedInstanceState);
         Log.d(getClass().getSimpleName(),"onCreate");
         className = getClass().getSimpleName();
-        getActivity().setTitle("Organizers' Handbook");
     }
 
     @Override
@@ -35,13 +34,15 @@ public class OrganizersHandbook extends Fragment
     {
         StaticMethods.removeTabLayout(getActivity());
 
+        getActivity().setTitle("Organizers' Handbook");
+
         myView = inflater.inflate(R.layout.schedule, container, false);
 
         Log.d(className,"onCreateView");
 
 
-        String septemberDays[] = {"1 Friday", "2 Sunday", "3 Saturday" , "4 Monday" ,
-                "5 Tuesday", "6 Wednesday", "7 Thursday ", "8 Friday", "9 Sunday"};
+        String septemberDays[] = {"1 Friday", "2 Saturday", "3 Sunday" , "4 Monday" ,
+                "5 Tuesday", "6 Wednesday", "7 Thursday ", "8 Friday", "9 Saturday"};
 
 
 

@@ -11,8 +11,13 @@
         android:text="Medium Text"
         android:textSize="18dp"
         style="@style/CalendarText"
-        android:id="@+id/schedule_calendar_day"
-        android:layout_marginBottom="40dp"
-        android:layout_gravity=""/>
+        android:id="@+id/schedule_calendar_day"/>
+
+    <View
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_marginBottom="40dp">
+
+    </View>
 
 </LinearLayout>
