@@ -12,8 +12,8 @@
             android:title="Schedule" />
         <item
             android:id="@+id/nav_drinking_get2know"
-            android:icon="@drawable/book"
-            android:title="Drinking and G2K" />
+            android:icon="@drawable/ic_toc_black_24px"
+            android:title="Drinking Games and G2K" />
     </group>
 
 </menu>

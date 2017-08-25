@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:src="@mipmap/logo_ac_horizontal"
+        android:src="@mipmap/schedule"
         app:fabSize="mini"
         app:backgroundTint="#6DBACD"
         app:elevation="6dp"

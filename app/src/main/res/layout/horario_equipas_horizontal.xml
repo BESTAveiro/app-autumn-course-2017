@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:src="@mipmap/logo_ac_horizontal"
+        android:src="@mipmap/schedule_horizontal"
         app:fabSize="mini"
         app:backgroundTint="#6DBACD"
         app:elevation="6dp"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         app:fabSize="mini"
-        android:src="@mipmap/logo_ac_horizontal"
+        android:src="@mipmap/logo_ac"
         app:backgroundTint="#FAC075"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp" />
