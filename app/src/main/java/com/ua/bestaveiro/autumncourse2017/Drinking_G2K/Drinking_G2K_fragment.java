@@ -19,6 +19,8 @@ public class Drinking_G2K_fragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
+        getActivity().setTitle("Drinking Games and G2K");
+
         View myView;
         myView = inflater.inflate(R.layout.activity_main_drinking_and_get2know_games, null);
 

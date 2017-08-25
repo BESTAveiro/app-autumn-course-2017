@@ -21,6 +21,7 @@ public class DrinkingGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drinking_game);
 
+
         ListView lv = (ListView) findViewById(R.id.list_view_drinking);
         lv.setAdapter(new ListViewAdapter());
         lv.setDivider(null);
