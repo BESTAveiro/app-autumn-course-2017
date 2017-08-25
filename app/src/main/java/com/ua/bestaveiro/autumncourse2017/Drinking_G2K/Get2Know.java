@@ -14,39 +14,32 @@ import android.widget.TextView;
 
 import com.ua.bestaveiro.autumncourse2017.R;
 
-public class Get2KnowGameList extends AppCompatActivity {
+public class Get2Know extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get2_know_game_list);
+        setContentView(R.layout.activity_get2_know);
 
-        ListView lv = (ListView) findViewById(R.id.list_view_get2know);
+        ListView lv= (ListView) findViewById(R.id.list_view_get2know);
         lv.setAdapter(new ListViewAdapter());
         lv.setDivider(null);
 
-
-        Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/neo.ttf");
+        Typeface tf=Typeface.createFromAsset(getAssets(), "fonts/neo.ttf");
         TextView tv=(TextView) findViewById(R.id.Get2KnowGameTitleFont);
         tv.setTypeface(tf);
     }
-
-    class ListViewAdapter extends BaseAdapter
-    {
-
+    class ListViewAdapter extends BaseAdapter {
         Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/neo.ttf");
         String[] all_games;
 
-
         public ListViewAdapter() {
-
-            all_games=getResources().getStringArray(R.array.all_get2Know_games);////////
-
+            all_games=getResources().getStringArray(R.array.get2know_games);
         }
 
         @Override
         public int getCount() {
-            return 16;
+            return 11;
         }
 
         @Override
@@ -60,24 +53,25 @@ public class Get2KnowGameList extends AppCompatActivity {
         }
 
         @Override
-        public View getView(final int position, View view, ViewGroup viewGroup) {
-            View v = view;
-
-            if (v == null) {
-                LayoutInflater vi;
-                vi = LayoutInflater.from(getBaseContext());
-                v = vi.inflate(R.layout.list_view_item, null);
+        public View getView(final int i, View view, ViewGroup viewGroup) {
+            View v=view;
+            if(v==null){
+                LayoutInflater vi=LayoutInflater.from(getBaseContext());
+                v=vi.inflate(R.layout.list_view_item,null);
             }
-            ((Button)v.findViewById(R.id.buttonBeerRoulette)).setText(all_games[position]);
-            ((Button)v.findViewById(R.id.buttonBeerRoulette)).setTypeface(tf);
-            ((Button)v.findViewById(R.id.buttonBeerRoulette)).setOnClickListener(new View.OnClickListener() {
+            Button g2kButtons= (Button) v.findViewById(R.id.buttonBeerRoulette);
+            g2kButtons.setText(all_games[i]);
+            g2kButtons.setTypeface(tf);
+            g2kButtons.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View view) {
-                    Intent tmp=new Intent(Get2KnowGameList.this, DrinkingGameDescription.class);
+                    Intent tmp=new Intent(Get2Know.this, Get2KnowDescription.class);
+                    tmp.putExtra("position", i);
                     startActivity(tmp);
                 }
             });
             return v;
         }
     }
+
 }

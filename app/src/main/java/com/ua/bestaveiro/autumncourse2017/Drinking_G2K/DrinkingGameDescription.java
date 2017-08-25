@@ -9,7 +9,6 @@ import android.widget.TextView;
 import com.ua.bestaveiro.autumncourse2017.R;
 
 public class DrinkingGameDescription extends AppCompatActivity {
-
     String[] all_drinking_names;
 
     String[] all_min_players;
@@ -24,8 +23,6 @@ public class DrinkingGameDescription extends AppCompatActivity {
     int position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drinking_game_description);
 
@@ -72,7 +69,5 @@ public class DrinkingGameDescription extends AppCompatActivity {
         TextView tv7=(TextView) findViewById(R.id.Description);
         tv7.setTypeface(tf2);
         tv7.setText(all_descriptions[position]);
-
-
     }
 }
