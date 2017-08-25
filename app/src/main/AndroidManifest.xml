@@ -21,8 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Drinking_G2K.DrinkingGameList" />
+        <activity android:name=".Drinking_G2K.DrinkingGame" />
+        <activity android:name=".Drinking_G2K.Get2Know" />
         <activity android:name=".Drinking_G2K.DrinkingGameDescription" />
+        <activity android:name=".Drinking_G2K.Get2KnowDescription" />
     </application>
 
 </manifest>

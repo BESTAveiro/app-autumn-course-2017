@@ -13,7 +13,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.ua.bestaveiro.autumncourse2017.Drinking_G2K.Drinking_G2K;
+import com.ua.bestaveiro.autumncourse2017.Drinking_G2K.Drinking_G2K_fragment;
 import com.ua.bestaveiro.autumncourse2017.OrganizersHandbook.OrganizersHandbook;
 import com.ua.bestaveiro.autumncourse2017.Schedule.Schedule;
 
@@ -66,9 +66,12 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+        if (drawer.isDrawerOpen(GravityCompat.START))
+        {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        }
+        else
+        {
             if (fragManager.getBackStackEntryCount() > 0)
             {
                 fragManager.popBackStack();
@@ -114,10 +117,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_drinking_get2know:
                 fragManager.beginTransaction()
                         .replace(R.id.content_frame
-                                , new Drinking_G2K())
+                                , new Drinking_G2K_fragment())
                         .addToBackStack("op")
                         .commit();
-                fragStack.push(6);
+                fragStack.push(2);
                 break;
         }
 

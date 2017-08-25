@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent" android:layout_height="match_parent"
-                android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
+    <Button
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="September"
-        android:textSize="40dp"
-        style="@style/CalendarText"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:id="@+id/textViewCalendarSeptember"
-        android:layout_gravity="center"/>
+        android:text="Event"
+        android:padding="30sp"
+        android:textSize="20sp"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="110sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btn2" />
 
-    <GridView
+    <Button
+        android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/gridViewCalendarSeptember"
-        android:numColumns="3"/>
+        android:background="@drawable/button_border"
+        android:text="Teams"
+        android:padding="30sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
 
 
 
-</LinearLayout>
+
+</RelativeLayout>

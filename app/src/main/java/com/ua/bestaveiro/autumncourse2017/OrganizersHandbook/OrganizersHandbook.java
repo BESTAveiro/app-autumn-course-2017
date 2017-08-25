@@ -36,7 +36,7 @@ public class OrganizersHandbook extends Fragment
 
         getActivity().setTitle("Organizers' Handbook");
 
-        myView = inflater.inflate(R.layout.schedule, container, false);
+        myView = inflater.inflate(R.layout.organizershandbook, container, false);
 
         Log.d(className,"onCreateView");
 

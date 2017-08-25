@@ -31,7 +31,7 @@ public class Schedule extends Fragment{
 
         getActivity().setTitle("Schedule"); // Nome no separador
 
-        myView = inflater.inflate(R.layout.horario, container, false); // Define o layout
+        myView = inflater.inflate(R.layout.schedule, container, false); // Define o layout
 
         btn1 = (Button) myView.findViewById(R.id.btn1);
         btn2 = (Button) myView.findViewById(R.id.btn2);
