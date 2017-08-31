@@ -12,11 +12,11 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.1'
     defaultConfig {
-        applicationId 'bestaveiro.autumncourse2017'
+        applicationId 'bestaveiro.autumncourse20172'
         minSdkVersion 18
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName '1.2'
     }
     buildTypes {
         release {
@@ -44,6 +44,4 @@ dependencies {
     compile 'com.android.support:design:25.4.0'
     compile 'com.android.support:support-v4:25.4.0'
     compile 'com.android.support:recyclerview-v7:25.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
 }

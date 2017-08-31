@@ -43,8 +43,41 @@ public class ShowPDF extends Fragment
     {
         View myView = inflater.inflate(R.layout.schedule_show_pdf, container, false);
 
+        int realDayToShow = 0;
+
+        switch (dayToShow)
+        {
+            case 0:
+                realDayToShow = 2;
+                break;
+            case 1:
+                realDayToShow = 5;
+                break;
+            case 2:
+                realDayToShow = 7;
+                break;
+            case 3:
+                realDayToShow = 10;
+                break;
+            case 4:
+                realDayToShow = 12;
+                break;
+            case 5:
+                realDayToShow = 14;
+                break;
+            case 6:
+                realDayToShow = 16;
+                break;
+            case 7:
+                realDayToShow = 18;
+                break;
+            case 8:
+                realDayToShow = 20;
+                break;
+        }
+
         PDFView pdfView = (PDFView) myView.findViewById(R.id.pdfView);
-        pdfView.fromAsset("example.pdf").defaultPage(dayToShow).load();
+        pdfView.fromAsset("OH.pdf").defaultPage(realDayToShow).load();
 
 
         return myView;
