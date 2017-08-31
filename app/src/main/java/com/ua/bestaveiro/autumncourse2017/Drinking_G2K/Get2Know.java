@@ -19,6 +19,7 @@ public class Get2Know extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_get2_know);
 
         ListView lv= (ListView) findViewById(R.id.list_view_get2know);
