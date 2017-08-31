@@ -28,7 +28,7 @@ public class ScheduleEvento extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        myView3 = inflater.inflate(R.layout.horario_evento, container, false);
+        myView3 = inflater.inflate(R.layout.schedule_evento, container, false);
 
         fragmentManager = getFragmentManager();
 

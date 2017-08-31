@@ -18,7 +18,6 @@ public class ScheduleEquipas extends Fragment
 
     View myView1;
     FragmentManager fragmentManager;
-    FragmentManager fragmentManager2;
     FloatingActionButton fab;
     FloatingActionButton fab2;
 
@@ -27,14 +26,16 @@ public class ScheduleEquipas extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        myView1 = inflater.inflate(R.layout.horario_equipas, container, false); // Define o layout
+        myView1 = inflater.inflate(R.layout.schedule_equipas, container, false); // Define o layout
 
         fab = (FloatingActionButton) myView1.findViewById(R.id.fab);
+
+        fragmentManager = getFragmentManager();
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager = getFragmentManager();
+
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                 ScheduleEvento fragment = new ScheduleEvento();
@@ -51,8 +52,7 @@ public class ScheduleEquipas extends Fragment
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager2 = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                 ScheduleEquipasHorizontal fragment = new ScheduleEquipasHorizontal();
                 fragmentTransaction.replace(R.id.content_frame, fragment);

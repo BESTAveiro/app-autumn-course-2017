@@ -27,7 +27,7 @@ public class ScheduleEventoHorizontal extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        myView4 = inflater.inflate(R.layout.horario_evento_horizontal, container, false);
+        myView4 = inflater.inflate(R.layout.schedule_evento_horizontal, container, false);
 
         fab = (FloatingActionButton) myView4.findViewById(R.id.fab);
 

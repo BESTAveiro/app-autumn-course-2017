@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.ua.bestaveiro.autumncourse2017.MainActivity;
 import com.ua.bestaveiro.autumncourse2017.R;
@@ -18,9 +17,7 @@ public class ScheduleEquipasHorizontal extends Fragment
 {
 
     View myView2;
-    ImageView image;
     FragmentManager fragmentManager;
-    FragmentManager fragmentManager2;
 
     FloatingActionButton fab;
     FloatingActionButton fab2;
@@ -30,14 +27,15 @@ public class ScheduleEquipasHorizontal extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        myView2 = inflater.inflate(R.layout.horario_equipas_horizontal, container, false); // Define o layout
+        myView2 = inflater.inflate(R.layout.schedule_equipas_horizontal, container, false); // Define o layout
 
         fab = (FloatingActionButton) myView2.findViewById(R.id.fab);
+
+        fragmentManager = getFragmentManager();
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                 ScheduleEventoHorizontal fragment = new ScheduleEventoHorizontal();
@@ -54,8 +52,7 @@ public class ScheduleEquipasHorizontal extends Fragment
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager2 = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager2.beginTransaction();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                 ScheduleEquipas fragment = new ScheduleEquipas();
                 fragmentTransaction.replace(R.id.content_frame, fragment);
