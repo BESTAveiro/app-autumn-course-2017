@@ -48,7 +48,7 @@ public class ShowPDF extends Fragment
         switch (dayToShow)
         {
             case 0:
-                realDayToShow = 2;
+                realDayToShow = 3;
                 break;
             case 1:
                 realDayToShow = 5;
@@ -57,22 +57,22 @@ public class ShowPDF extends Fragment
                 realDayToShow = 7;
                 break;
             case 3:
-                realDayToShow = 10;
+                realDayToShow = 9;
                 break;
             case 4:
-                realDayToShow = 12;
+                realDayToShow = 11;
                 break;
             case 5:
-                realDayToShow = 14;
+                realDayToShow = 13;
                 break;
             case 6:
-                realDayToShow = 16;
+                realDayToShow = 15;
                 break;
             case 7:
-                realDayToShow = 18;
+                realDayToShow = 17;
                 break;
             case 8:
-                realDayToShow = 20;
+                realDayToShow = 18;
                 break;
         }
 
