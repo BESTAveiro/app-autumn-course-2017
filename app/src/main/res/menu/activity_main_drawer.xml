@@ -14,6 +14,10 @@
             android:id="@+id/nav_drinking_get2know"
             android:icon="@drawable/ic_toc_black_24px"
             android:title="Drinking Games and G2K" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_list_black"
+            android:title="Contacts" />
     </group>
 
 </menu>

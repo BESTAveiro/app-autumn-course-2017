@@ -25,6 +25,7 @@
         <activity android:name=".Drinking_G2K.Get2Know" />
         <activity android:name=".Drinking_G2K.DrinkingGameDescription" />
         <activity android:name=".Drinking_G2K.Get2KnowDescription" />
+        <activity android:name=".Contacts.People" />
     </application>
 
 </manifest>

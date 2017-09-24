@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.ua.bestaveiro.autumncourse2017.Contacts.Contacts;
 import com.ua.bestaveiro.autumncourse2017.Drinking_G2K.Drinking_G2K_fragment;
 import com.ua.bestaveiro.autumncourse2017.OrganizersHandbook.OrganizersHandbook;
 import com.ua.bestaveiro.autumncourse2017.Schedule.Schedule;
@@ -121,6 +122,14 @@ public class MainActivity extends AppCompatActivity
                         .addToBackStack("op")
                         .commit();
                 fragStack.push(2);
+                break;
+            case R.id.nav_contacts:
+                fragManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new Contacts())
+                        .addToBackStack("op")
+                    .commit();
+                fragStack.push(3);
                 break;
         }
 

@@ -61,6 +61,66 @@
         <item>4</item>
     </string-array>
 
+    <string-array name="nome_das_pessoase_e_numero">
+        <item>Ana Margarida</item>
+        <item>Ana Malta</item>
+        <item>Ana Vasconcelos</item>
+        <item>Ana Candeidas</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="nome_das_pessoas">
+        <item>Ana Margarida</item>
+        <item>Ana Malta</item>
+        <item>Ana Vasconcelos</item>
+        <item>Ana Candeidas</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="telemoveis_das_pessoas">
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+    </string-array>
+
+    <string-array name="equipas_das_pessoas">
+        <item>Vermelha</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarela</item>
+        <item>Vermelha</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarela</item>
+        <item>Amarela</item>
+    </string-array>
+
+    <string-array name="cargo_das_pessoas">
+        <item>Presidente</item>
+        <item>Social Responsible</item>
+        <item>IT Responsible</item>
+        <item>MKT Responsible</item>
+        <item>FR Responsible</item>
+        <item>VP HR</item>
+        <item>VP HR</item>
+        <item>VP HR</item>
+        <item>VP HR</item>
+    </string-array>
+
     <string-array name="all_materials">
         <item>6 beers</item>
         <item>Big plastic cups, two ping pong balls and drinks</item>

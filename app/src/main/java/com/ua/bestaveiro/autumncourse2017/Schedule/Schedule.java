@@ -68,12 +68,6 @@ public class Schedule extends Fragment{
             }
         });
 
-
         return myView;
     }
-
-
-
-
-
 }
