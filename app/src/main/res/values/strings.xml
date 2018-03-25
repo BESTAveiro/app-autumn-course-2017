@@ -61,31 +61,60 @@
         <item>4</item>
     </string-array>
 
-    <string-array name="nome_das_pessoase_e_numero">
-        <item>Ana Margarida</item>
-        <item>Ana Malta</item>
-        <item>Ana Vasconcelos</item>
-        <item>Ana Candeidas</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
-
     <string-array name="nome_das_pessoas">
         <item>Ana Margarida</item>
         <item>Ana Malta</item>
         <item>Ana Vasconcelos</item>
         <item>Ana Candeidas</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Ana Rita Silva</item>
+        <item>David Gomes</item>
+        <item>Vânia Gomes</item>
+        <item>Vladimir Ghilas</item>
+        <item>Ana Candeias</item>
+        <item>Ana Daniela Batista</item>
+        <item>Ana Moura</item>
+        <item>Ana Oliveira</item>
+        <item>Catarina Brás</item>
+        <item>Daniela Galvão</item>
+        <item>Dora Videira</item>
+        <item>Eduarda Silva</item>
+        <item>Hugo Simões</item>
+        <item>Jorge Marques</item>
+        <item>Margarida Afonso</item>
+        <item>Maria Inês David</item>
+        <item>Mariana Santos</item>
+        <item>Marta Santos</item>
+        <item>Mateus Lima</item>
+        <item>Rafaela Reis</item>
+        <item>Pedro Martins</item>
+        <item>Rita Oliveira</item>
+        <item>Vicente Almeida</item>
+        <item>Adriana Costa</item>
     </string-array>
 
+    <string-array name="foto_de_perfil">
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+        <item>@drawable/foto_de_perfil</item>
+    </string-array>
+
+
+
     <string-array name="telemoveis_das_pessoas">
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
+        <item>123 456 789</item>
         <item>123 456 789</item>
         <item>123 456 789</item>
         <item>123 456 789</item>

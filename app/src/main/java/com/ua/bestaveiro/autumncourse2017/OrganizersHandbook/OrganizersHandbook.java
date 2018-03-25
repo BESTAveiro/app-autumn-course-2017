@@ -23,7 +23,6 @@ public class OrganizersHandbook extends Fragment
 
     View myView;
     String className;
-    String[] pessoas;
 
 
 
@@ -50,21 +49,27 @@ public class OrganizersHandbook extends Fragment
         String septemberDays[] = {"1 Friday", "2 Saturday", "3 Sunday" , "4 Monday" ,
                 "5 Tuesday", "6 Wednesday", "7 Thursday ", "8 Friday", "9 Saturday"};
 
-        pessoas = getResources().getStringArray(R.array.nome_das_pessoas);
-
-
 
 
         GridView septemberGV = (GridView) myView.findViewById(R.id.gridViewCalendarSeptember);
         septemberGV.setAdapter(new OrganizersHandbookCalendarGridViewAdapter(getActivity(), septemberDays));
 
-        septemberGV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+        septemberGV.setLongClickable(true);
+        septemberGV.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
+            @Override
+            public boolean onItemLongClick(AdapterView<?> arg0, View view,
+                                           int position , long id) {
+                // TODO Auto-generated method stub
+                Toast.makeText(getActivity(), "Long Click", Toast.LENGTH_SHORT).show();
+                            /*
+                             *You Can use parameters like position,view or id to
+                             *Customize your action
+                             */
+                return false;
             }
         });
+
 
         return myView;
     }
